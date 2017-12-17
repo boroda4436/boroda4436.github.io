@@ -1,0 +1,316 @@
+#mob-rule {
+  .operators-wrap {
+    display: block !important;
+  }
+  #wrap-nav-icon {
+    display: table-cell !important;
+  }
+  .back {
+    display: none !important;
+  }
+
+  &.small-keyboard {
+    #mob .small-keyboard {
+      display: block !important;
+    }
+    #mob .check-begin {
+      display: none !important;
+    }
+    #mob .check-process {
+      display: none !important;
+    }
+    #mob .check-success {
+      display: none !important;
+    }
+    #mob .check-error {
+      display: none !important;
+    }
+  }
+
+  &:not(.small-keyboard) {
+    #mob .small-keyboard {
+      display: none !important;
+    }
+    #mob .check-begin {
+      display: none !important;
+    }
+    #mob .check-process {
+      display: none !important;
+    }
+    #mob .check-success {
+      display: none !important;
+    }
+    #mob .check-error {
+      display: none !important;
+    }
+
+    &.check-begin {
+      #mob .check-begin {
+        display: block !important;
+      }
+    }
+    &.check-process {
+      #mob .check-process {
+        display: block !important;
+      }
+    }
+    &.check-success {
+      #mob .check-success {
+        display: block !important;
+      }
+    }
+    &.check-error {
+      #mob .check-error {
+        display: block !important;
+      }
+    }
+  }
+}
+
+#internet-rule {
+  .operators-wrap {
+    display: block !important;
+  }
+  #wrap-nav-icon {
+    display: table-cell !important;
+  }
+  //#modal-news       { display: block  !important; }
+  .back {
+    display: none !important;
+  }
+
+  &.small-keyboard {
+    #internet .small-keyboard {
+      display: block !important;
+    }
+    #internet .check-begin {
+      display: none !important;
+    }
+    #internet .check-process {
+      display: none !important;
+    }
+    #internet .check-success {
+      display: none !important;
+    }
+    #internet .check-error {
+      display: none !important;
+    }
+  }
+
+  &:not(.small-keyboard) {
+    #internet .small-keyboard {
+      display: none !important;
+    }
+    #internet .check-begin {
+      display: none !important;
+    }
+    #internet .check-process {
+      display: none !important;
+    }
+    #internet .check-success {
+      display: none !important;
+    }
+    #internet .check-error {
+      display: none !important;
+    }
+
+    &.check-begin {
+      #internet .check-begin {
+        display: block !important;
+      }
+    }
+    &.check-process {
+      #internet .check-process {
+        display: block !important;
+      }
+    }
+    &.check-success {
+      #internet .check-success {
+        display: block !important;
+      }
+    }
+    &.check-error {
+      #internet .check-error {
+        display: block !important;
+      }
+    }
+  }
+}
+
+#pay-systems-rule {
+  .operators-wrap {
+    display: block !important;
+  }
+  #wrap-nav-icon {
+    display: table-cell !important;
+  }
+  //#modal-news       { display: block  !important; }
+  .back {
+    display: none !important;
+  }
+
+  &.small-keyboard {
+    #pay-systems .small-keyboard {
+      display: block !important;
+    }
+    #pay-systems .check-begin {
+      display: none !important;
+    }
+    #pay-systems .check-process {
+      display: none !important;
+    }
+    #pay-systems .check-success {
+      display: none !important;
+    }
+    #pay-systems .check-error {
+      display: none !important;
+    }
+  }
+
+  &:not(.small-keyboard) {
+    #pay-systems .small-keyboard {
+      display: none !important;
+    }
+    #pay-systems .check-begin {
+      display: none !important;
+    }
+    #pay-systems .check-process {
+      display: none !important;
+    }
+    #pay-systems .check-success {
+      display: none !important;
+    }
+    #pay-systems .check-error {
+      display: none !important;
+    }
+
+    &.check-begin {
+      #pay-systems .check-begin {
+        display: block !important;
+      }
+    }
+    &.check-process {
+      #pay-systems .check-process {
+        display: block !important;
+      }
+    }
+    &.check-success {
+      #pay-systems .check-success {
+        display: block !important;
+      }
+    }
+    &.check-error {
+      #pay-systems .check-error {
+        display: block !important;
+      }
+    }
+  }
+}
+
+#web-services-rule {
+  .operators-wrap {
+    display: block !important;
+  }
+  #wrap-nav-icon {
+    display: table-cell !important;
+  }
+  .back {
+    display: none !important;
+  }
+
+  &.small-keyboard {
+    #web-services .small-keyboard {
+      display: block !important;
+    }
+    #web-services .check-begin {
+      display: none !important;
+    }
+    #web-services .check-process {
+      display: none !important;
+    }
+    #web-services .check-success {
+      display: none !important;
+    }
+    #web-services .check-error {
+      display: none !important;
+    }
+  }
+
+  &:not(.small-keyboard) {
+    #web-services .small-keyboard {
+      display: none !important;
+    }
+    #web-services .check-begin {
+      display: none !important;
+    }
+    #web-services .check-process {
+      display: none !important;
+    }
+    #web-services .check-success {
+      display: none !important;
+    }
+    #web-services .check-error {
+      display: none !important;
+    }
+
+    &.check-begin {
+      #web-services .check-begin {
+        display: block !important;
+      }
+    }
+    &.check-process {
+      #web-services .check-process {
+        display: block !important;
+      }
+    }
+    &.check-success {
+      #web-services .check-success {
+        display: block !important;
+      }
+    }
+    &.check-error {
+      #web-services .check-error {
+        display: block !important;
+      }
+    }
+  }
+}
+
+// =============================== 1024px ===============================
+@media screen and (max-width: 1115px) {
+  #mob-rule {
+    //&.home      { #modal-news{ display: table !important; }}
+    //&:not(.home){ #modal-news{ display: none  !important; }}
+  }
+
+  .point {
+    height: 58px;
+  }
+}
+
+// END =========================== 1024px ===============================
+
+// =============================== 750px =================================
+@media screen and (max-width: 750px) {
+  #mob-rule, #internet-rule, #pay-systems-rule, #web-services-rule {
+    &:not(.small-keyboard) {
+      #wrap-nav-icon {
+        display: none !important;
+      }
+      .operators-wrap {
+        display: none !important;
+      }
+      .back {
+        display: block !important;
+      }
+      .wrap-nav-top {
+        display: none !important;
+      }
+      .keyboard-box-wrap {
+        margin-top: 0 !important;
+      }
+    }
+  }
+}
+
+// END =========================== 750px ================================
