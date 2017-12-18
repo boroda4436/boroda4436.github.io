@@ -42,7 +42,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
-var AlertComponent = (function () {
+var AlertComponent = /** @class */ (function () {
     function AlertComponent(alertService) {
         this.alertService = alertService;
     }
@@ -85,7 +85,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
-var AuthGuard = (function () {
+var AuthGuard = /** @class */ (function () {
     function AuthGuard(router) {
         this.router = router;
     }
@@ -739,7 +739,7 @@ var fakeBackendProvider = {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Balance; });
-var Balance = (function () {
+var Balance = /** @class */ (function () {
     function Balance(bPersonal, bNetwork, bOverdraft, bDateTime) {
         this.bPersonal = bPersonal;
         this.bNetwork = bNetwork;
@@ -758,7 +758,7 @@ var Balance = (function () {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Category; });
-var Category = (function () {
+var Category = /** @class */ (function () {
     function Category(id, name, order) {
         this.cId = id;
         this.cName = name;
@@ -776,7 +776,7 @@ var Category = (function () {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Cheque; });
-var Cheque = (function () {
+var Cheque = /** @class */ (function () {
     function Cheque(cName, cText) {
         this.cName = cName;
         this.cText = cText;
@@ -793,7 +793,7 @@ var Cheque = (function () {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CollectionExtended; });
-var CollectionExtended = (function () {
+var CollectionExtended = /** @class */ (function () {
     function CollectionExtended(id, tradePoint, pointAddr, date, nominal, commission, quantity, summary, incomeTariff, collectorGet, saleRecord) {
         this.id = id;
         this.tradePoint = tradePoint;
@@ -841,7 +841,7 @@ var CollectionExtended = (function () {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Collection; });
-var Collection = (function () {
+var Collection = /** @class */ (function () {
     function Collection(opId, id, tradePoint, date, nominal, commission, sum, quantity, incomeTariff, collectorGet, firstOperation, lastOperation) {
         this.opId = opId;
         this.id = id;
@@ -880,7 +880,7 @@ var Collection = (function () {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Commission; });
-var Commission = (function () {
+var Commission = /** @class */ (function () {
     function Commission(min, percent, val) {
         this.cMin_amount = min;
         this.cPercent = percent;
@@ -898,7 +898,7 @@ var Commission = (function () {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Field; });
-var Field = (function () {
+var Field = /** @class */ (function () {
     function Field(fId, fName, fHint, fMask, fRegexp, fOrder) {
         this.fId = fId || 0;
         this.fName = fName || [];
@@ -941,7 +941,7 @@ var Field = (function () {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return News; });
-var News = (function () {
+var News = /** @class */ (function () {
     function News(nId, nOrder, nTitle, nBody, nFooter) {
         this.nId = nId;
         this.nOrder = nOrder;
@@ -961,7 +961,7 @@ var News = (function () {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Operation; });
-var Operation = (function () {
+var Operation = /** @class */ (function () {
     // --------------------
     function Operation(oId, oArticle, oType, oTimestamp, oFields, oAmount, oCommission, oComment, oStatus, oCheque, oIcon) {
         this.oId = oId;
@@ -988,7 +988,7 @@ var Operation = (function () {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Product; });
-var Product = (function () {
+var Product = /** @class */ (function () {
     function Product(pId, pType, pName, pHint, pInputFields, pCommissions, pNominal, pCheque, pProvCodes, pAmountMin, pAmountMax, pIcon, pOrder) {
         this.pId = pId;
         this.pType = pType;
@@ -1028,7 +1028,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 var PADDING = '000000';
-var MyCurrencyPipe = (function () {
+var MyCurrencyPipe = /** @class */ (function () {
     function MyCurrencyPipe() {
         // TODO comes from configuration settings
         this.DECIMAL_SEPARATOR = '.';
@@ -1086,7 +1086,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
-var SafeHtmlPipe = (function () {
+var SafeHtmlPipe = /** @class */ (function () {
     function SafeHtmlPipe(sanitized) {
         this.sanitized = sanitized;
     }
@@ -1117,7 +1117,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 
-var ToNumberPipe = (function () {
+var ToNumberPipe = /** @class */ (function () {
     function ToNumberPipe() {
     }
     ToNumberPipe.prototype.transform = function (value, args) {
@@ -1157,7 +1157,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 
-var ToRegexPipe = (function () {
+var ToRegexPipe = /** @class */ (function () {
     function ToRegexPipe() {
     }
     ToRegexPipe.prototype.transform = function (value) {
@@ -1199,6 +1199,7 @@ var ToRegexPipe = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__authentication_service__ = __webpack_require__("../../../../../src/app/_services/authentication.service.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_material__ = __webpack_require__("../../../material/esm5/material.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__translate_Lang__ = __webpack_require__("../../../../../src/app/translate/Lang.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__global_service__ = __webpack_require__("../../../../../src/app/_services/global.service.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1214,7 +1215,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var AlertService = (function () {
+
+var AlertService = /** @class */ (function () {
     function AlertService(router, auth, dialog) {
         var _this = this;
         this.router = router;
@@ -1256,15 +1258,14 @@ var AlertService = (function () {
     AlertService.prototype.getMessage = function () {
         return this.subject.asObservable();
     };
-    AlertService.prototype.showError = function (error) {
-        this.currError.emit(error);
-    };
+    // showError(error) {
+    //   this.currError.emit(error);
+    // }
     AlertService.prototype.onError = function (error) {
         // console.log("ERROR");
         // console.log(error);
         switch (error.status) {
             case 500: {
-                // this.openDialog(error);
                 break;
             }
             case 501: {
@@ -1272,10 +1273,9 @@ var AlertService = (function () {
             }
             case 502: {
                 console.log('Server temporary unavailable');
-                // this.openDialog(error);
-                this.showError({
-                    error: 'Сервер не отвечает',
-                    errorText: 'Сервер недоступен. Попробуйте зайти на сайт позже.'
+                __WEBPACK_IMPORTED_MODULE_6__global_service__["a" /* GlobalService */].showDialog({
+                    title: 'Сервер не отвечает',
+                    body: 'Сервер недоступен. Попробуйте зайти на сайт позже.'
                 });
                 break;
             }
@@ -1295,9 +1295,9 @@ var AlertService = (function () {
             }
             default: {
                 if (error.status === 0) {
-                    this.showError({
-                        error: 'Нет интернета',
-                        errorText: 'Проверьте соединение интернет и обновите страницу'
+                    __WEBPACK_IMPORTED_MODULE_6__global_service__["a" /* GlobalService */].showDialog({
+                        title: 'Нет интернета',
+                        body: 'Проверьте соединение интернет и обновите страницу'
                     });
                 }
                 else {
@@ -1345,7 +1345,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var AuthenticationService = (function () {
+var AuthenticationService = /** @class */ (function () {
     function AuthenticationService(service, user) {
         this.service = service;
         this.user = user;
@@ -1410,7 +1410,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var CategoryService = (function () {
+var CategoryService = /** @class */ (function () {
     function CategoryService(service, global) {
         this.service = service;
         this.global = global;
@@ -1481,7 +1481,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
-var GlobalService = (function () {
+var GlobalService = /** @class */ (function () {
     function GlobalService() {
         this.activity = 0;
         this.currOnline = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["EventEmitter"]();
@@ -1541,6 +1541,20 @@ var GlobalService = (function () {
             return true;
         }
     };
+    /**
+     obj = {
+        title: string, - name of dialog
+        body: string, - html template to show as body
+        closable: boolean - flag is dialog able to be closed or not
+     }*/
+    GlobalService.showDialog = function (obj) {
+        if (obj) {
+            this.currDialog.next(obj);
+        }
+        else {
+            this.currDialog.next(null);
+        }
+    };
     /** Flag for hiding debug messages from console.log() and console.warn() methods */
     GlobalService.hideConsole = true;
     /** Flag and path of page for redirection to market and return there after logout*/
@@ -1550,15 +1564,19 @@ var GlobalService = (function () {
      * Used only in operation creation to block all actions while operation in progress
      * default value - false */
     GlobalService.blockedNavigation = false;
+    /** Applications href*/
+    GlobalService.playstore = "https://play.google.com/store/apps/details?id=ua.com.globalpay.globalpay";
+    GlobalService.appstore = "#";
+    GlobalService.showList = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["EventEmitter"]();
+    GlobalService.navMenu = false;
     /**AUDIO FILES*/
     /**main audio chanel*/
     GlobalService.audio = new Audio();
-    GlobalService.showList = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["EventEmitter"]();
-    GlobalService.navMenu = false;
     /**preloaded audio objects*/
     GlobalService.tink = new Audio('assets/audio/tink.mp3');
     GlobalService.failed = new Audio('assets/audio/failure.mp3');
     GlobalService.payed = new Audio('assets/audio/payed.mp3');
+    GlobalService.currDialog = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["EventEmitter"]();
     GlobalService = GlobalService_1 = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
         __metadata("design:paramtypes", [])
@@ -1588,7 +1606,7 @@ var GlobalService = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__operation_service__ = __webpack_require__("../../../../../src/app/_services/operation.service.ts");
 /* unused harmony namespace reexport */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__news_service__ = __webpack_require__("../../../../../src/app/_services/news.service.ts");
-/* unused harmony namespace reexport */
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "c", function() { return __WEBPACK_IMPORTED_MODULE_6__news_service__["a"]; });
 
 
 
@@ -1608,6 +1626,7 @@ var GlobalService = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__swagger_api_UserApi__ = __webpack_require__("../../../../../src/app/swagger/api/UserApi.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__models_news__ = __webpack_require__("../../../../../src/app/_models/news.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__global_service__ = __webpack_require__("../../../../../src/app/_services/global.service.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1620,13 +1639,15 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var NewsService = (function () {
+
+var NewsService = /** @class */ (function () {
     function NewsService(service) {
         this.service = service;
         this.NEWS = [];
         this.showNews = true;
         this.currNews = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["EventEmitter"]();
     }
+    NewsService_1 = NewsService;
     NewsService.prototype.getNews = function () {
         return this.service.userNewsGet();
     };
@@ -1646,15 +1667,41 @@ var NewsService = (function () {
                 this.currNews.emit(true);
             }
         }
+        var mobileView = __WEBPACK_IMPORTED_MODULE_3__global_service__["a" /* GlobalService */].checkMobileView();
+        if (mobileView && NewsService_1.showApps) {
+            // console.error(mobileView);
+            var obj = {
+                title: '',
+                body: '<span style="white-space: normal">Установите мобильное приложение</span><br>' +
+                    '<div style="display: inline">' +
+                    '<button class="app-btn" style="float: right; background-color: yellowgreen" >' +
+                    '<a class="app_href"' +
+                    'href="' + __WEBPACK_IMPORTED_MODULE_3__global_service__["a" /* GlobalService */].playstore + '">' +
+                    '   Скачать' +
+                    '   <img class="app-img" target="_blank" src=assets/images/icons/android.svg><br> ' +
+                    '</a></button>' +
+                    '<button class="app-btn" style="float: left; background-color: black">' +
+                    '<a class="app_href"  ' +
+                    'href="' + __WEBPACK_IMPORTED_MODULE_3__global_service__["a" /* GlobalService */].appstore + '">' +
+                    '   Скачать' +
+                    '   <img class="app-img" target="_blank" src=assets/images/icons/apple_icon.svg><br> ' +
+                    '</a></button>' +
+                    '</div>',
+                closeable: true
+            };
+            __WEBPACK_IMPORTED_MODULE_3__global_service__["a" /* GlobalService */].showDialog(obj);
+        }
         console.log(this.NEWS);
         return this.NEWS;
         // return [];
     };
-    NewsService = __decorate([
+    NewsService.showApps = true;
+    NewsService = NewsService_1 = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__swagger_api_UserApi__["a" /* UserApi */]])
     ], NewsService);
     return NewsService;
+    var NewsService_1;
 }());
 
 
@@ -1685,7 +1732,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var OperationService = (function () {
+var OperationService = /** @class */ (function () {
     function OperationService(service, global, user) {
         this.service = service;
         this.global = global;
@@ -2211,7 +2258,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var ProductService = (function () {
+var ProductService = /** @class */ (function () {
     function ProductService(service, userServ, alert, opService, catService, global) {
         this.service = service;
         this.userServ = userServ;
@@ -2454,7 +2501,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var ReportsService = (function () {
+var ReportsService = /** @class */ (function () {
     function ReportsService(service, alert, operation, user) {
         this.service = service;
         this.alert = alert;
@@ -2619,7 +2666,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var UserService = (function () {
+var UserService = /** @class */ (function () {
     function UserService(service, alert) {
         this.service = service;
         this.alert = alert;
@@ -2728,7 +2775,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
-var AppComponent = (function () {
+var AppComponent = /** @class */ (function () {
     function AppComponent(config) {
         this.config = config;
     }
@@ -2891,7 +2938,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var AppModule = (function () {
+var AppModule = /** @class */ (function () {
     function AppModule() {
     }
     AppModule = __decorate([
@@ -3053,7 +3100,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/categories/categories.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div id=\"wrapper\" class=\"wrap-nav-top\">\r\n  <div id=\"scroll-content\" class=\"container scrol-cont\">\r\n    <ul id=\"nav-top\" class=\"tabs nav-top\">\r\n      <li *ngFor=\"let category of categories|orderBy:'cId'\" class=\"tab\">\r\n        <a *ngIf=\"category.cId&&category.cName\"\r\n           [ngClass]=\"{'active': (category.cId === currCatId) }\"\r\n           (click)=\"selectCategory(category)\">{{Lang(category.cName)}}</a>\r\n      </li>\r\n    </ul>\r\n  </div>\r\n</div>\r\n\r\n<div id=\"main-wrap\" class=\"container main-wrap clearfix no-news\">\r\n  <app-nav-menu></app-nav-menu>\r\n  <app-help></app-help>\r\n  <div *ngIf=\"currActivity==0\" [ngSwitch]=\"currCatId\" class=\"wrap-left clearfix\" style=\"max-width: 750px\">\r\n    <div *ngFor=\"let category of categories|orderBy:'cOrder'\" id='{{category.cId}}'>\r\n      <app-center *ngSwitchCase=\"(category.cId)\" [catId]=category.cId></app-center>\r\n    </div>\r\n  </div>\r\n  <app-news *ngIf=\"currActivity==0\"></app-news>\r\n  <!--Operation report-->\r\n  <app-operation-report *ngIf=\"currActivity==2\"></app-operation-report>\r\n  <!--Other reports-->\r\n  <app-reports *ngIf=\"[1,4,5,6,7].includes(currActivity)\"></app-reports>\r\n  <!--Collection report-->\r\n  <!--<app-reports *ngIf=\"currActivity==3\"></app-reports>-->\r\n  <app-collection *ngIf=\"currActivity==3\"></app-collection>\r\n  <!--Change pass-->\r\n  <app-change-pass *ngIf=\"currActivity==8\"></app-change-pass>\r\n\r\n</div>\r\n"
+module.exports = "<div id=\"wrapper\" class=\"wrap-nav-top\">\r\n  <div id=\"scroll-content\" class=\"container scrol-cont\">\r\n    <ul id=\"nav-top\" class=\"tabs nav-top\">\r\n      <li *ngFor=\"let category of categories|orderBy:'cId'\" class=\"tab\">\r\n        <a *ngIf=\"category.cId&&category.cName\"\r\n           [ngClass]=\"{'active': (category.cId === currCatId) }\"\r\n           (click)=\"selectCategory(category)\">{{Lang(category.cName)}}</a>\r\n      </li>\r\n    </ul>\r\n  </div>\r\n</div>\r\n\r\n<div id=\"main-wrap\" class=\"container main-wrap clearfix no-news\">\r\n  <app-nav-menu></app-nav-menu>\r\n  <app-help></app-help>\r\n  <div *ngIf=\"currActivity==0\" [ngSwitch]=\"currCatId\" class=\"wrap-left clearfix\" style=\"max-width: 750px\">\r\n    <div *ngFor=\"let category of categories|orderBy:'cOrder'\" id='{{category.cId}}'>\r\n      <app-center *ngSwitchCase=\"(category.cId)\" [catId]=category.cId></app-center>\r\n    </div>\r\n  </div>\r\n  <app-news *ngIf=\"currActivity==0||(currActivity!=0&&mobileView)\"></app-news>\r\n  <!--Operation report-->\r\n  <app-operation-report *ngIf=\"currActivity==2\"></app-operation-report>\r\n  <!--Other reports-->\r\n  <app-reports *ngIf=\"[1,4,5,6,7].includes(currActivity)\"></app-reports>\r\n  <!--Collection report-->\r\n  <!--<app-reports *ngIf=\"currActivity==3\"></app-reports>-->\r\n  <app-collection *ngIf=\"currActivity==3\"></app-collection>\r\n  <!--Change pass-->\r\n  <app-change-pass *ngIf=\"currActivity==8\"></app-change-pass>\r\n\r\n</div>\r\n"
 
 /***/ }),
 
@@ -3085,7 +3132,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var CategoriesComponent = (function () {
+var CategoriesComponent = /** @class */ (function () {
     function CategoriesComponent(catService, prodService, newsServ, global, alert) {
         var _this = this;
         this.catService = catService;
@@ -3095,6 +3142,7 @@ var CategoriesComponent = (function () {
         this.alert = alert;
         this.categories = this.catService.CATEGORIES;
         this.currActivity = 0;
+        this.mobileView = window.innerWidth <= 1115;
         this.catService.currCat.subscribe(function (value) {
             _this.currCatId = value;
         });
@@ -3219,7 +3267,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
-var CenterComponent = (function () {
+var CenterComponent = /** @class */ (function () {
     function CenterComponent(service) {
         var _this = this;
         this.service = service;
@@ -3294,7 +3342,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
-var ChangePassComponent = (function () {
+var ChangePassComponent = /** @class */ (function () {
     function ChangePassComponent(auth) {
         this.auth = auth;
         this.loading = false;
@@ -3399,7 +3447,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var CheckBeginComponent = (function () {
+var CheckBeginComponent = /** @class */ (function () {
     // transInfo = this.service.OPERATION;
     function CheckBeginComponent(service, prodService) {
         this.service = service;
@@ -3530,7 +3578,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var CheckProcessComponent = (function () {
+var CheckProcessComponent = /** @class */ (function () {
     function CheckProcessComponent(service, prodServ, alert) {
         var _this = this;
         this.service = service;
@@ -3732,7 +3780,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var FastAccessComponent = (function () {
+var FastAccessComponent = /** @class */ (function () {
     function FastAccessComponent(service, products) {
         var _this = this;
         this.service = service;
@@ -3805,7 +3853,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/header/header.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<header>\r\n  <div class=container>\r\n    <div class=\"header-top clearfix\">\r\n      <div class=header-left>\r\n        <div class=tabel_c-img-wrap><a class=back href=#><img src=\"assets/images/icons/back.png\" alt=\"\"></a>\r\n        </div>\r\n        <div id=wrap-nav-icon class=\"tabel_c-img-wrap clearfix\">\r\n          <div id=nav-icon (click)=\"showMenu()\"><span></span> <span></span> <span></span></div>\r\n          <div class=\"help-modal help-modal-small modal-menu\">\r\n            <div class=arrow-dialog>{{'menu_hint'|translate}}</div>\r\n          </div>\r\n        </div>\r\n        <div class=tabel_c-img-wrap\r\n             style=\"cursor: pointer\"\r\n             (click)=\"showBegin()\">\r\n          <a class=logo-wrap>\r\n            <img src=\"assets/images/{{(mobileView||windowWidth<770) ? 'GP_logo':'globalpay_logo'}}.svg\"\r\n                 [style.height]=\"(mobileView||windowWidth<770) ? '35px':'30px'\"\r\n                 alt=лого class=logo>\r\n          </a>\r\n        </div>\r\n        <span class=user-id>{{terminal}}</span></div>\r\n      <div class=header-right>\r\n        <span *ngIf=\"showBalance\" class=balance (click)=\"getBalance()\">\r\n          <span class=text>\r\n           <img style=\"height: 24px;vertical-align: sub\"\r\n                src=\"assets/images/wallet.svg\" alt=\"\">\r\n          </span>\r\n          <span class=balance-value>{{((balance.bNetwork)/100)|myCurrency}}</span>\r\n        </span>\r\n        <span class=cashier>\r\n          <span>{{'cashier'|translate}}</span>\r\n          <span class=cashier-name>{{cashier}}</span>\r\n        </span>\r\n        <div class=tabel_c-img-wrap><a href=# class=exit (click)=\"exit()\">\r\n          <svg class=svg-exit>\r\n            <use href=#exit></use>\r\n          </svg>\r\n        </a></div>\r\n        <span id=\"mob_right_menu\" class=showmore (click)=\"showMore()\"><img src=\"assets/images/icons/show-more.svg\"\r\n                                                                           alt=\"\">\r\n          <ul class=more-list>\r\n            <li>\r\n            <a href=#>\r\n              <div class=list-inner-tabel_c (click)=\"showNews()\">{{'News'|translate}}</div>\r\n            </a>\r\n            <li>\r\n            <a href=# class=show-help>\r\n              <div class=list-inner-tabel_c (click)=\"showHelp()\">{{'Help'|translate}}</div>\r\n            </a>\r\n            <li>\r\n            <a href=#>\r\n              <div class=list-inner-tabel_c id=\"exit-word\" (click)=\"exit()\">{{'Exit'|translate}}</div>\r\n            </a>\r\n          </ul>\r\n        </span></div>\r\n    </div>\r\n  </div>\r\n</header>\r\n<div class=nav-menu-shadow (click)=\"closeMenu()\"></div>\r\n"
+module.exports = "<header>\r\n  <div class=container>\r\n    <div class=\"header-top clearfix\">\r\n      <div class=header-left>\r\n        <div class=tabel_c-img-wrap><a class=back href=#><img src=\"assets/images/icons/back.png\" alt=\"\"></a>\r\n        </div>\r\n        <div id=wrap-nav-icon class=\"tabel_c-img-wrap clearfix\"\r\n             (click)=\"showMenu()\">\r\n          <div id=nav-icon>\r\n            <span style=\"width: 60px\"></span>\r\n            <span style=\"width: 60px\"></span>\r\n            <span style=\"width: 60px\"></span>\r\n          </div>\r\n          <div class=\"help-modal help-modal-small modal-menu\">\r\n            <div class=arrow-dialog>{{'menu_hint'|translate}}</div>\r\n          </div>\r\n        </div>\r\n        <div class=tabel_c-img-wrap\r\n             style=\"cursor: pointer\"\r\n             (click)=\"showBegin()\">\r\n          <a class=logo-wrap>\r\n            <img src=\"assets/images/{{(mobileView||windowWidth<770) ? 'GP_logo':'globalpay_logo'}}.svg\"\r\n                 [style.height]=\"(mobileView||windowWidth<770) ? '35px':'30px'\"\r\n                 alt=лого class=logo>\r\n          </a>\r\n        </div>\r\n        <span class=user-id>{{terminal}}</span></div>\r\n      <div class=header-right>\r\n        <span *ngIf=\"showBalance\" class=balance (click)=\"getBalance()\">\r\n          <span class=text>\r\n           <img style=\"height: 24px;vertical-align: sub\"\r\n                src=\"assets/images/wallet.svg\" alt=\"\">\r\n          </span>\r\n          <span class=balance-value>{{((balance.bNetwork)/100)|myCurrency}}</span>\r\n        </span>\r\n        <span class=cashier>\r\n          <span>{{'cashier'|translate}}</span>\r\n          <span class=cashier-name>{{cashier}}</span>\r\n        </span>\r\n        <div class=tabel_c-img-wrap><a href=# class=exit (click)=\"exit()\">\r\n          <svg class=svg-exit>\r\n            <use href=#exit></use>\r\n          </svg>\r\n        </a></div>\r\n        <span id=\"mob_right_menu\" class=showmore (click)=\"showMore()\"><img src=\"assets/images/icons/show-more.svg\"\r\n                                                                           alt=\"\">\r\n          <ul class=more-list>\r\n            <li>\r\n            <a href=#>\r\n              <div class=list-inner-tabel_c (click)=\"showNews()\">{{'News'|translate}}</div>\r\n            </a>\r\n            <li>\r\n            <a href=# class=show-help>\r\n              <div class=list-inner-tabel_c (click)=\"showHelp()\">{{'Help'|translate}}</div>\r\n            </a>\r\n            <li>\r\n            <a href=#>\r\n              <div class=list-inner-tabel_c id=\"exit-word\" (click)=\"exit()\">{{'Exit'|translate}}</div>\r\n            </a>\r\n          </ul>\r\n        </span></div>\r\n    </div>\r\n  </div>\r\n</header>\r\n<div class=nav-menu-shadow (click)=\"closeMenu()\"></div>\r\n"
 
 /***/ }),
 
@@ -3839,7 +3887,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var HeaderComponent = (function () {
+var HeaderComponent = /** @class */ (function () {
     function HeaderComponent(service, auth, catService, prodService, opService, cdr) {
         var _this = this;
         this.service = service;
@@ -3890,7 +3938,8 @@ var HeaderComponent = (function () {
         document.getElementById('mob_right_menu').classList.toggle('show-showmore');
     };
     HeaderComponent.prototype.showNews = function () {
-        document.getElementById('modal-news').classList.toggle('hide-news');
+        if (document.getElementById('modal-news'))
+            document.getElementById('modal-news').classList.toggle('hide-news');
     };
     HeaderComponent.prototype.showHelp = function () {
         document.getElementById('help_block').classList.toggle('show-modal');
@@ -3970,7 +4019,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var HelpComponent = (function () {
+var HelpComponent = /** @class */ (function () {
     function HelpComponent(user, alert) {
         this.user = user;
         this.alert = alert;
@@ -4009,7 +4058,7 @@ var HelpComponent = (function () {
 /***/ "../../../../../src/app/home/dialog.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div style=\"text-align: center\">\r\n  <h4 style=\"margin-bottom: 30px\">{{title}}</h4>\r\n  <span style=\"font-size: 20px\">{{message}}</span>\r\n</div>\r\n"
+module.exports = "<button *ngIf=\"closeable\" mat-button [mat-dialog-close]=\"true\"\r\n        (click)=\"closeDialog()\"\r\n        style=\"float:right; margin:-10px -10px -25px 0; outline:none; border: 0; background-color: white\">\r\n  <img src=\"assets/images/icons/clean-sum.png\">\r\n</button>\r\n\r\n<div style=\"text-align: center\">\r\n  <h4 *ngIf=\"title!=''\" style=\"margin-bottom: 20px\">{{title}}</h4>\r\n  <div style=\"font-size: 20px; margin-top: 10px;\" [innerHTML]=\"message|safeHtml\"></div>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -4021,7 +4070,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "", ""]);
+exports.push([module.i, ".cdk-overlay-pane {\r\n  max-width: 400px !important;\r\n}\r\n", ""]);
 
 // exports
 
@@ -4053,6 +4102,7 @@ module.exports = "<div id=mob-rule class=small-keyboard>\r\n  <div id=internet-r
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_alert_service__ = __webpack_require__("../../../../../src/app/_services/alert.service.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__services_product_service__ = __webpack_require__("../../../../../src/app/_services/product.service.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__services_user_service__ = __webpack_require__("../../../../../src/app/_services/user.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__services__ = __webpack_require__("../../../../../src/app/_services/index.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -4074,7 +4124,8 @@ var __param = (this && this.__param) || function (paramIndex, decorator) {
 
 
 
-var HomeComponent = (function () {
+
+var HomeComponent = /** @class */ (function () {
     function HomeComponent(configuration, global, alert, auth, user, dialog, prodServ, cdr) {
         var _this = this;
         this.configuration = configuration;
@@ -4099,11 +4150,16 @@ var HomeComponent = (function () {
                 _this.openDialog(val.error, val.errorText);
             }
         });
-        this.alert.currError.subscribe(function (val) {
-            if (val) {
-                _this.openDialog(val.error, val.errorText);
+        __WEBPACK_IMPORTED_MODULE_5__services_global_service__["a" /* GlobalService */].currDialog.subscribe(function (data) {
+            if (data != null) {
+                _this.openDialog(data.title, data.body, data.closeable);
             }
         });
+        // this.alert.currError.subscribe((val) => {
+        //   if (val) {
+        //     this.openDialog(val.error, val.errorText);
+        //   }
+        // });
     }
     HomeComponent.prototype.ngOnInit = function () {
         this.global.checkOnline();
@@ -4124,25 +4180,29 @@ var HomeComponent = (function () {
     HomeComponent.prototype.ngAfterViewInit = function () {
         this.cdr.detectChanges();
     };
-    HomeComponent.prototype.openDialog = function (title, message) {
+    HomeComponent.prototype.openDialog = function (title, message, closeable) {
         var config = {};
         if (window.screen.availWidth < 720) {
             config = {
                 disableClose: true,
-                height: '65vh',
-                width: '65vw',
+                maxHeight: '80vh',
+                width: '92vw',
+                minWidth: '300px',
+                marginLeft: '2vw'
             };
         }
         else {
             config = {
                 disableClose: true,
-                height: '250px',
-                width: '250px',
+                maxHeight: '550px',
+                width: '300px',
             };
         }
         var dialogRef = this.dialog.open(GlobalDialog, config);
         dialogRef.componentInstance.title = title;
         dialogRef.componentInstance.message = message;
+        if (closeable)
+            dialogRef.componentInstance.closeable = closeable;
         // console.log('dialogRef', dialogRef);
     };
     HomeComponent = __decorate([
@@ -4158,19 +4218,24 @@ var HomeComponent = (function () {
     return HomeComponent;
 }());
 
-var GlobalDialog = (function () {
+var GlobalDialog = /** @class */ (function () {
     function GlobalDialog(dialogRef, cdr, data) {
         this.dialogRef = dialogRef;
         this.cdr = cdr;
         this.data = data;
         this.title = 'TEST';
         this.message = 'test text';
+        this.closeable = false;
         window.scrollTo(0, 1);
     }
     GlobalDialog.prototype.ngOnInit = function () {
     };
     GlobalDialog.prototype.setL = function (names) {
         return __WEBPACK_IMPORTED_MODULE_4__translate_Lang__["a" /* Lang */].getLangValue(names);
+    };
+    GlobalDialog.prototype.closeDialog = function () {
+        if (__WEBPACK_IMPORTED_MODULE_9__services__["c" /* NewsService */].showApps)
+            __WEBPACK_IMPORTED_MODULE_9__services__["c" /* NewsService */].showApps = false;
     };
     GlobalDialog = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
@@ -4220,7 +4285,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/input-form/input-form.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<form name=\"form\" #F=\"ngForm\" (ngSubmit)=\"F.form.valid\" novalidate>\r\n  <div class=up-keyboard style=\"min-height: 50px\">\r\n    <div class=inputs-wrap>\r\n      <div *ngIf=\"product.pId==0\"\r\n           style=\"margin: 15px 0 40px\"\r\n           class=\"input-wrap-icon show\">\r\n        <input class=\"number input-field\" name=number id=\"findNumber\"\r\n               [readonly]=\"mobileView\"\r\n               [textMask]=\"{mask: mask}\"\r\n               [(ngModel)]=\"findNumber\"\r\n               placeholder=\"(___) ___-__-__\"\r\n               (focus)=\"setActiveInput(1)\"\r\n               (ngModelChange)=\"searchByNumber(findNumber)\"/>\r\n        <span class=bkspace-input (click)=\"findNumber=clear(findNumber)\"><svg class=svg-menu-icon><use\r\n          xlink:href=#backspace></use></svg></span>\r\n      </div>\r\n\r\n\r\n      <div class=\"input-wrap-icon show\" style=\"margin: -10px 0 -30px 0; z-index: 10\">\r\n        <mat-form-field\r\n          *ngFor=\"let f of fields|reverse; let i = index;\"\r\n          style=\"width: 100%; height:80px; z-index: 2; padding-bottom: 10px\">\r\n\r\n          <input *ngIf=\"f.field.fRegexp!='.'\" matInput required\r\n                 [readonly]=\"mobileView\"\r\n                 placeholder=\"{{setL(f.field.fName)}}\"\r\n                 class=\"number input-field\" style=\"border: 0; margin-bottom: -5px;\"\r\n                 name=\"input-field{{f.field.fOrder}}\" id=\"field{{f.field.fOrder}}\"\r\n                 [textMask]=\"{mask: (f.field.fMask|toRegex), guide:true}\"\r\n                 value=\"{{f.field.fMask}}\"\r\n                 pattern=\"{{f.field.fRegexp }}\"\r\n                 #number=\"ngModel\"\r\n                 [(ngModel)]=\"f.value\"\r\n                 (focus)=\"setActiveInput(2,f.field.fOrder)\"\r\n                 (ngModelChange)=\"f.value=clearModel(f.value);\"\r\n                 (keyup.enter)=\"onEnterAction()\"\r\n                 onkeypress='return event.charCode !=32'\r\n                 title=\"{{setL(f.field.fHint)}}\"/>\r\n\r\n          <input *ngIf=\"f.field.fRegexp=='.'\" matInput required\r\n                 [readonly]=\"mobileView\"\r\n                 placeholder=\"{{setL(f.field.fName)}}\"\r\n                 class=\"number input-field\" style=\"border: 0; margin-bottom: -5px;\"\r\n                 name=\"input-field{{f.field.fOrder}}\"\r\n                 id=\"field{{f.field.fOrder}}-nomask\"\r\n                 pattern=\".*\"\r\n                 #number=\"ngModel\"\r\n                 [(ngModel)]=\"f.value\"\r\n                 (ngModelChange)=\"f.value=clearModel(f.value);setMasked(f.value)\"\r\n                 (focus)=\"setActiveInput(2,f.field.fOrder)\"\r\n                 (keyup.enter)=\"onEnterAction(f)\"\r\n                 onkeypress='return event.charCode !=32'\r\n                 title=\"{{setL(f.field.fHint)}}\"/>\r\n\r\n          <span class=bkspace-input\r\n                (click)=\"f.value=clear(f.value); setMasked();\">\r\n        <svg class=svg-menu-icon><use xlink:href=#backspace></use></svg></span>\r\n        </mat-form-field>\r\n      </div>\r\n      <!--========================================================-->\r\n      <div *ngIf=\"product.pId!=0\" class=\"under-main_field clearfix\" style=\"padding-top: 20px\">\r\n        <div *ngIf=\"product.pType==1\" class=\"\" style=\"font-size: 17px\">\r\n          {{'voucher'|translate}} <br>\r\n          <span\r\n            style=\"font-weight: 600; font-size: 17px\">{{setL(product.pName)}}<br></span>\r\n          {{'nominal'|translate}}: <span\r\n          style=\"font-weight: bold; font-size: 20px\">{{(product.pNominal/100)}}</span><br>\r\n\r\n          {{'voucher_hint'|translate}}\r\n        </div>\r\n        <br>\r\n        <div class=wrap-sum id=\"wrap-sum\" *ngIf=\"product.pType==2\">\r\n          <mat-form-field style=\"width: 95px; height: 60px;\">\r\n            <input name=\"amount\" id=\"amount\"\r\n                   maxlength=\"5\"\r\n                   [readonly]=\"mobileView\"\r\n                   currencyMask\r\n                   [options]=\"{ prefix: '', suffix:'', thousands: ' ', align:'right', precision:'0'}\"\r\n                   pattern=\"^[0-9]{1,5}\"\r\n                   class=\"sum form-control numeric\"\r\n                   style=\"border: 0; text-align: right\"\r\n                   matInput required\r\n                   [(ngModel)]=\"amount\"\r\n                   (ngModelChange)=\"amount=validateSum()\"\r\n                   [placeholder]=\"'amount'|translate\"\r\n                   (focus)=\"setActiveInput(3)\"\r\n                   (blur)=\"onBlur()\"\r\n                   (keyup.enter)=\"onEnterAction()\"\r\n                   (keydown)=\"keyboardInputSum($event)\"\r\n                   value=\"{{amount}}\"\r\n                   type=\"text\" dir=\"ltr\">\r\n          </mat-form-field>\r\n          <span class=\"point\">.</span>\r\n          <mat-form-field style=\"width: 60px; padding-left: 0;\">\r\n            <input id=\"coins\" name=\"coins\"\r\n                   maxlength=\"2\"\r\n                   [readonly]=\"mobileView\"\r\n                   pattern=\"[0-9][0-9]\"\r\n                   onkeypress='return event.charCode >= 48 && event.charCode <= 57'\r\n                   (keydown)=\"insertCoins($event)\"\r\n                   (ngModelChange)=\"validateSum()\"\r\n                   class=\"sum numeric\"\r\n                   style=\"border: 0; width: 50px; padding: 0 8px\"\r\n                   matInput [(ngModel)]=\"coins\"\r\n                   (change)=\"clearCoins()\"\r\n                   (keyup.enter)=\"onEnterAction()\"\r\n                   (blur)=\"onBlur()\"\r\n                   (focus)=\"setActiveInput(3,1)\" dir=\"ltr\">\r\n          </mat-form-field>\r\n          <span class=clear-sum (click)=\"clearSum()\"></span>\r\n        </div>\r\n        <br>\r\n        <button *ngIf=\"false\" type=button\r\n                class=contact-list_btn>\r\n          <svg class=svg-contact-list>\r\n            <use xlink:href=#contact-list></use>\r\n          </svg>\r\n        </button>\r\n      </div>\r\n      <div *ngIf=\"invalid.min\" style=\"color:red; margin-top:20px\">Сумма <\r\n        {{product.pAmountMin/100}}\r\n      </div>\r\n      <div *ngIf=\"invalid.max\" style=\"color:red; margin-top: 20px\">Сумма >\r\n        {{product.pAmountMax/100}}\r\n      </div>\r\n      <div *ngIf=\"invalid.commission\" style=\"color:red; margin-top: 20px\">\r\n        {{'high_commission'|translate}}<br>\r\n        {{'on_balance'|translate}}: {{onBalance}}\r\n      </div>\r\n      <div *ngIf=\"product.pId!=0\" style=\"display: inline-block; width: 100%;\">\r\n        <button *ngIf=\"product.pId!=0\" type=button class=remark (click)=\"showComment()\">{{'comment'|translate}}</button>\r\n\r\n        <input (click)=\"setActiveInput(4)\" (focus)=\"setActiveInput(4)\" [formControl]=\"comment\" [readonly]=\"mobileView\"\r\n               class=\"remark-text form-control\"\r\n               id=remark-text>\r\n      </div>\r\n    </div>\r\n\r\n\r\n    <div *ngIf=\"product.pId!=0\" style=\"margin-top: 5px; height: 50px;\">\r\n      <button\r\n        [disabled]=\"F.form.invalid||(product.pType==2&&amount=='0'&&coins=='00')||invalid.min||invalid.max||invalid.commission\"\r\n        [ngClass]=\"{'disabled':(product.pType==2&&(F.form.invalid||(coins=='00'&&amount=='0')))||invalid.min||invalid.max||invalid.commission}\"\r\n        type=\"submit\"\r\n        id=\"operation-next\"\r\n        class=\"waves-effect waves-light btn next onkeyboard \"\r\n        (click)=\"pressup()\"\r\n        (keydown.enter)=\"pressup()\"\r\n        (mousedown)=\"mousedown($event)\"\r\n        (mouseup)=\"mouseup($event)\"\r\n        (mouseleave)=\"mouseup($event)\"\r\n        (press)=\"longPress()\"\r\n        (pressup)=\"pressup()\"\r\n        (pan)=\"pressup()\">\r\n        <span id=\"execute\" class=next-onkeyboard-inner>{{'execute'|translate}}</span>\r\n        {{'next'|translate}}\r\n        <span class=next-onkeyboard-overfl></span>\r\n      </button>\r\n    </div>\r\n    <!--<div id=\"wrong-data\" style=\"color: red;\" class=\"hide\">Change summ! Commission is bigger than amount</div>-->\r\n    <!--TODO!-->\r\n\r\n\r\n  </div>\r\n</form>\r\n<app-keyboard (onBtnClick)=\"keyboardPress($event)\"></app-keyboard>\r\n\r\n"
+module.exports = "<form name=\"form\" #F=\"ngForm\" (ngSubmit)=\"F.form.valid\" novalidate>\r\n  <div class=up-keyboard style=\"min-height: 50px\">\r\n    <div class=inputs-wrap>\r\n      <div *ngIf=\"product.pId==0\"\r\n           style=\"margin: 15px 0 40px\"\r\n           class=\"input-wrap-icon show\">\r\n        <input class=\"number input-field\" name=number id=\"findNumber\"\r\n               [readonly]=\"mobileView\"\r\n               [textMask]=\"{mask: mask}\"\r\n               [(ngModel)]=\"findNumber\"\r\n               placeholder=\"(___) ___-__-__\"\r\n               (focus)=\"setActiveInput(1)\"\r\n               (ngModelChange)=\"searchByNumber(findNumber)\"/>\r\n        <span class=bkspace-input (click)=\"findNumber=clear(findNumber)\"><svg class=svg-menu-icon><use\r\n          xlink:href=#backspace></use></svg></span>\r\n      </div>\r\n\r\n\r\n      <div class=\"input-wrap-icon show\" style=\"margin: -10px 0 -30px 0; z-index: 10\">\r\n        <mat-form-field\r\n          *ngFor=\"let f of fields|reverse; let i = index;\"\r\n          style=\"width: 100%; height:80px; z-index: 2; padding-bottom: 10px\">\r\n\r\n          <input *ngIf=\"f.field.fRegexp!='.'\" matInput required\r\n                 [readonly]=\"mobileView\"\r\n                 placeholder=\"{{setL(f.field.fName)}}\"\r\n                 class=\"number input-field\" style=\"border: 0; margin-bottom: -5px;\"\r\n                 name=\"input-field{{f.field.fOrder}}\" id=\"field{{f.field.fOrder}}\"\r\n                 [textMask]=\"{mask: (f.field.fMask|toRegex), guide:true}\"\r\n                 value=\"{{f.field.fMask}}\"\r\n                 pattern=\"{{f.field.fRegexp }}\"\r\n                 #number=\"ngModel\"\r\n                 [(ngModel)]=\"f.value\"\r\n                 (focus)=\"setActiveInput(2,f.field.fOrder)\"\r\n                 (ngModelChange)=\"f.value=clearModel(f.value);\"\r\n                 (keyup.enter)=\"onEnterAction()\"\r\n                 onkeypress='return event.charCode !=32'\r\n                 title=\"{{setL(f.field.fHint)}}\"/>\r\n\r\n          <input *ngIf=\"f.field.fRegexp=='.'\" matInput required\r\n                 [readonly]=\"mobileView\"\r\n                 placeholder=\"{{setL(f.field.fName)}}\"\r\n                 class=\"number input-field\" style=\"border: 0; margin-bottom: -5px;\"\r\n                 name=\"input-field{{f.field.fOrder}}\"\r\n                 id=\"field{{f.field.fOrder}}-nomask\"\r\n                 pattern=\".*\"\r\n                 #number=\"ngModel\"\r\n                 [(ngModel)]=\"f.value\"\r\n                 (ngModelChange)=\"f.value=clearModel(f.value);setMasked(f.value)\"\r\n                 (focus)=\"setActiveInput(2,f.field.fOrder)\"\r\n                 (keyup.enter)=\"onEnterAction(f)\"\r\n                 onkeypress='return event.charCode !=32'\r\n                 title=\"{{setL(f.field.fHint)}}\"/>\r\n\r\n          <span class=bkspace-input\r\n                (click)=\"f.value=clear(f.value); setMasked();\">\r\n        <svg class=svg-menu-icon><use xlink:href=#backspace></use></svg></span>\r\n        </mat-form-field>\r\n      </div>\r\n      <!--========================================================-->\r\n      <div *ngIf=\"product.pId!=0\" class=\"under-main_field clearfix\" style=\"padding-top: 20px\">\r\n        <div *ngIf=\"product.pType==1\" class=\"\" style=\"font-size: 17px\">\r\n          {{'voucher'|translate}} <br>\r\n          <span\r\n            style=\"font-weight: 600; font-size: 17px\">{{setL(product.pName)}}<br></span>\r\n          {{'nominal'|translate}}: <span\r\n          style=\"font-weight: bold; font-size: 20px\">{{(product.pNominal/100)}}</span><br>\r\n\r\n          {{'voucher_hint'|translate}}\r\n        </div>\r\n        <br>\r\n        <div class=wrap-sum id=\"wrap-sum\" *ngIf=\"product.pType==2\">\r\n          <mat-form-field style=\"width: 95px; height: 60px;\">\r\n            <input name=\"amount\" id=\"amount\"\r\n                   maxlength=\"5\"\r\n                   [readonly]=\"mobileView\"\r\n                   currencyMask\r\n                   [options]=\"{ prefix: '', suffix:'', thousands: ' ', align:'right', precision:'0'}\"\r\n                   pattern=\"^[0-9]{1,5}\"\r\n                   class=\"sum form-control numeric\"\r\n                   style=\"border: 0; text-align: right\"\r\n                   matInput required\r\n                   [(ngModel)]=\"amount\"\r\n                   (ngModelChange)=\"amount=validateSum()\"\r\n                   [placeholder]=\"'amount'|translate\"\r\n                   (focus)=\"setActiveInput(3)\"\r\n                   (blur)=\"onBlur()\"\r\n                   (keyup.enter)=\"onEnterAction()\"\r\n                   (keydown)=\"keyboardInputSum($event)\"\r\n                   value=\"{{amount}}\"\r\n                   type=\"text\" dir=\"ltr\">\r\n          </mat-form-field>\r\n          <span class=\"point\">.</span>\r\n          <mat-form-field style=\"width: 60px; padding-left: 0;\">\r\n            <input id=\"coins\" name=\"coins\"\r\n                   maxlength=\"2\"\r\n                   [readonly]=\"mobileView\"\r\n                   pattern=\"[0-9]{1,2}\"\r\n                   onkeypress='return event.charCode >= 48 && event.charCode <= 57'\r\n                   (keydown)=\"insertCoins($event)\"\r\n                   (ngModelChange)=\"validateSum()\"\r\n                   class=\"sum numeric\"\r\n                   style=\"border: 0; width: 50px; padding: 0 8px\"\r\n                   matInput [(ngModel)]=\"coins\"\r\n                   (change)=\"clearCoins()\"\r\n                   (keyup.enter)=\"onEnterAction()\"\r\n                   (blur)=\"onBlur()\"\r\n                   (focus)=\"setActiveInput(3,1)\" dir=\"ltr\">\r\n          </mat-form-field>\r\n          <span class=clear-sum (click)=\"clearSum()\"></span>\r\n        </div>\r\n        <br>\r\n        <button *ngIf=\"false\" type=button\r\n                class=contact-list_btn>\r\n          <svg class=svg-contact-list>\r\n            <use xlink:href=#contact-list></use>\r\n          </svg>\r\n        </button>\r\n      </div>\r\n      <div *ngIf=\"invalid.min\" style=\"color:red; margin-top:20px\">Сумма <\r\n        {{product.pAmountMin/100}}\r\n      </div>\r\n      <div *ngIf=\"invalid.max\" style=\"color:red; margin-top: 20px\">Сумма >\r\n        {{product.pAmountMax/100}}\r\n      </div>\r\n      <div *ngIf=\"invalid.commission\" style=\"color:red; margin-top: 20px\">\r\n        {{'high_commission'|translate}}<br>\r\n        {{'on_balance'|translate}}: {{onBalance}}\r\n      </div>\r\n      <div *ngIf=\"product.pId!=0\" style=\"display: inline-block; width: 100%;\">\r\n        <button *ngIf=\"product.pId!=0\" type=button class=remark (click)=\"showComment()\">{{'comment'|translate}}</button>\r\n\r\n        <input (click)=\"setActiveInput(4)\" (focus)=\"setActiveInput(4)\" [formControl]=\"comment\" [readonly]=\"mobileView\"\r\n               class=\"remark-text form-control\"\r\n               id=remark-text>\r\n      </div>\r\n    </div>\r\n\r\n\r\n    <div *ngIf=\"product.pId!=0\" style=\"margin-top: 5px; height: 50px;\">\r\n      <button\r\n        [disabled]=\"F.form.invalid||(product.pType==2&&amount=='0'&&coins=='00')||invalid.min||invalid.max||invalid.commission\"\r\n        [ngClass]=\"{'disabled':(product.pType==2&&(F.form.invalid||(coins=='00'&&amount=='0')))||invalid.min||invalid.max||invalid.commission}\"\r\n        type=\"submit\"\r\n        id=\"operation-next\"\r\n        class=\"waves-effect waves-light btn next onkeyboard \"\r\n        (click)=\"pressup()\"\r\n        (keydown.enter)=\"pressup()\"\r\n        (mousedown)=\"mousedown($event)\"\r\n        (mouseup)=\"mouseup($event)\"\r\n        (mouseleave)=\"mouseup($event)\"\r\n        (press)=\"longPress()\"\r\n        (pressup)=\"pressup()\"\r\n        (pan)=\"pressup()\">\r\n        <span id=\"execute\" class=next-onkeyboard-inner>{{'execute'|translate}}</span>\r\n        {{'next'|translate}}\r\n        <span class=next-onkeyboard-overfl></span>\r\n      </button>\r\n    </div>\r\n    <!--<div id=\"wrong-data\" style=\"color: red;\" class=\"hide\">Change summ! Commission is bigger than amount</div>-->\r\n    <!--TODO!-->\r\n\r\n\r\n  </div>\r\n</form>\r\n<!--<app-keyboard (onBtnClick)=\"keyboardPress($event)\"></app-keyboard>-->\r\n\r\n<div [ngSwitch]=\"currKeyboard\" id=\"keyboard\" style=\"padding-top: 0px\">\r\n  <div *ngSwitchCase=\"1\" class=\"keyboard-wrap numbers clearfix\">\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton(1)\">1</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton(2)\">2</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton(3)\">3</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton(4)\">4</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton(5)\">5</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton(6)\">6</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton(7)\">7</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton(8)\">8</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton(9)\">9</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button id=\"but0\" type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton(0)\">0</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('.')\">.</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner letters\" (click)=\"changeKeyboard(2)\">абв\r\n      </button>\r\n    </div>\r\n    <div class=\"help-modal help-modal-small modal-keyboard\">\r\n      <div class=arrow-dialog>{{'keyboard_help'|translate}}</div>\r\n    </div>\r\n  </div>\r\n  <div *ngSwitchCase=\"2\" class=\"keyboard-wrap letters ru clearfix\">\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('й')\">й</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('ц')\">ц</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('у')\">у</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('к')\">к</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('е')\">е</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('н')\">н</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('г')\">г</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('ш')\">ш</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('щ')\">щ</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('з')\">з</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('х')\">х</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('ф')\">ф</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('ы')\">ы</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('в')\">в</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('а')\">а</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('п')\">п</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('р')\">р</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('о')\">о</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('л')\">л</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('д')\">д</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('ж')\">ж</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('э')\">э</button>\r\n    </div>\r\n    <div class=\"key-wrap upper\">\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"changeToUpper()\">\r\n        <svg class=svg-keyboard-icon>\r\n          <use href=#uppercase></use>\r\n        </svg>\r\n      </button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('я')\">я</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('ч')\">ч</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('с')\">с</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('м')\">м</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('и')\">и</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('т')\">т</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('ь')\">ь</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('б')\">б</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('ю')\">ю</button>\r\n    </div>\r\n    <div class=\"key-wrap bkspace\">\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"removeSymbol()\">\r\n        <svg class=svg-keyboard-icon>\r\n          <use href=#backspace></use>\r\n        </svg>\r\n      </button>\r\n    </div>\r\n    <div class=\"key-wrap switch-numbers\">\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"changeKeyboard(1)\">123</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('@')\">@</button>\r\n    </div>\r\n    <div class=\"key-wrap switch-en\">\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"changeKeyboard(3)\">en</button>\r\n    </div>\r\n    <div class=\"key-wrap space\">\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('space')\">Русский</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('.')\">.</button>\r\n    </div>\r\n    <div class=\"key-wrap switch-symbols\">\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"changeKeyboard(4)\">>.!</button>\r\n    </div>\r\n  </div>\r\n  <div *ngSwitchCase=\"3\" class=\"keyboard-wrap letters en clearfix\">\r\n    <div class=clearfix>\r\n      <div class=key-wrap>\r\n        <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('q')\">q</button>\r\n      </div>\r\n      <div class=key-wrap>\r\n        <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('w')\">w</button>\r\n      </div>\r\n      <div class=key-wrap>\r\n        <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('e')\">e</button>\r\n      </div>\r\n      <div class=key-wrap>\r\n        <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('r')\">r</button>\r\n      </div>\r\n      <div class=key-wrap>\r\n        <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('t')\">t</button>\r\n      </div>\r\n      <div class=key-wrap>\r\n        <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('y')\">y</button>\r\n      </div>\r\n      <div class=key-wrap>\r\n        <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('u')\">u</button>\r\n      </div>\r\n      <div class=key-wrap>\r\n        <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('i')\">i</button>\r\n      </div>\r\n      <div class=key-wrap>\r\n        <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('o')\">o</button>\r\n      </div>\r\n      <div class=key-wrap>\r\n        <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('p')\">p</button>\r\n      </div>\r\n    </div>\r\n    <div class=clearfix>\r\n      <div class=\"key-wrap leftspace-mibble\">\r\n        <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('a')\">a</button>\r\n      </div>\r\n      <div class=key-wrap>\r\n        <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('s')\">s</button>\r\n      </div>\r\n      <div class=key-wrap>\r\n        <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('d')\">d</button>\r\n      </div>\r\n      <div class=key-wrap>\r\n        <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('f')\">f</button>\r\n      </div>\r\n      <div class=key-wrap>\r\n        <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('g')\">g</button>\r\n      </div>\r\n      <div class=key-wrap>\r\n        <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('h')\">h</button>\r\n      </div>\r\n      <div class=key-wrap>\r\n        <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('j')\">j</button>\r\n      </div>\r\n      <div class=key-wrap>\r\n        <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('k')\">k</button>\r\n      </div>\r\n      <div class=key-wrap>\r\n        <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('l')\">l</button>\r\n      </div>\r\n    </div>\r\n    <div class=clearfix>\r\n      <div class=\"key-wrap upper\">\r\n        <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"changeToUpper()\">\r\n          <svg class=svg-keyboard-icon>\r\n            <use href=#uppercase></use>\r\n          </svg>\r\n        </button>\r\n      </div>\r\n      <div class=key-wrap>\r\n        <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('z')\">z</button>\r\n      </div>\r\n      <div class=key-wrap>\r\n        <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('x')\">x</button>\r\n      </div>\r\n      <div class=key-wrap>\r\n        <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('c')\">c</button>\r\n      </div>\r\n      <div class=key-wrap>\r\n        <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('v')\">v</button>\r\n      </div>\r\n      <div class=key-wrap>\r\n        <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('b')\">b</button>\r\n      </div>\r\n      <div class=key-wrap>\r\n        <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('n')\">n</button>\r\n      </div>\r\n      <div class=key-wrap>\r\n        <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('m')\">m</button>\r\n      </div>\r\n      <div class=\"key-wrap bkspace\">\r\n        <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"removeSymbol()\">\r\n          <svg class=svg-keyboard-icon>\r\n            <use href=#backspace></use>\r\n          </svg>\r\n        </button>\r\n      </div>\r\n    </div>\r\n    <div class=\"bottom-letters clearfix\">\r\n      <div class=\"key-wrap switch-numbers\">\r\n        <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"changeKeyboard(1)\">123</button>\r\n      </div>\r\n      <div class=key-wrap>\r\n        <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('@')\">@</button>\r\n      </div>\r\n      <div class=\"key-wrap switch-ru\">\r\n        <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"changeKeyboard(2)\">ru</button>\r\n      </div>\r\n      <div class=\"key-wrap space\">\r\n        <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('space')\">English\r\n        </button>\r\n      </div>\r\n      <div class=key-wrap>\r\n        <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('.')\">.</button>\r\n      </div>\r\n      <div class=\"key-wrap switch-symbols\">\r\n        <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"changeKeyboard(4)\">>.!</button>\r\n      </div>\r\n    </div>\r\n  </div>\r\n  <div *ngSwitchCase=\"4\" class=\"keyboard-wrap symbols clearfix\">\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('!')\">!</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('@')\">@</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('#')\">#</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('$')\">$</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('%')\">%</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('^')\">^</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('&')\">&</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('*')\">*</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('(')\">(</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton(')')\">)</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('-')\">-</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('+')\">+</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('№')\">№</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton(';')\">;</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('?')\">?</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('_')\">_</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('=')\">=</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('{')\">{{ \"{\" }}</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('}')\">}</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('[')\">[</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton(']')\">]</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('\\\\')\">\\</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('&lt;')\">&lt;</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('&gt;')\">&gt;</button>\r\n    </div>\r\n    <div class=\"key-wrap letters\">\r\n      <button type=button class=\"waves-effect waves-light btn key-inner letters\" (click)=\"changeKeyboard(2)\">абв\r\n      </button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton(',')\">,</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('.')\">.</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('/')\">/</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('&quot;')\">\"</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('\\'')\">'</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('|')\">|</button>\r\n    </div>\r\n    <div class=\"key-wrap bkspace\">\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"removeSymbol()\">\r\n        <svg class=svg-keyboard-icon>\r\n          <use href=#backspace></use>\r\n        </svg>\r\n      </button>\r\n    </div>\r\n  </div>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -4256,13 +4321,15 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var InputFormComponent = (function () {
+var InputFormComponent = /** @class */ (function () {
     // ======== HELP METHODS ================================================================================================
     function InputFormComponent(opService, catService, prodService) {
         var _this = this;
         this.opService = opService;
         this.catService = catService;
         this.prodService = prodService;
+        this.currKeyboard = 1;
+        this.upperCase = false;
         this.product = new __WEBPACK_IMPORTED_MODULE_4__models_product__["a" /* Product */](0, 0, [{
                 cult: '',
                 value: ''
@@ -4322,12 +4389,12 @@ var InputFormComponent = (function () {
         });
     }
     InputFormComponent.prototype.ngOnInit = function () {
-        console.warn('INIT STAGE 1');
+        console.warn("INIT STAGE 1");
         console.log(this.prodService.PRODUCTS);
         console.log(this.opService.OPERATION);
         if (this.catService.CurrentCATEGORY.cOrder != 1 && this.prodService.PRODUCTS.length > 0) {
             if (this.opService.OPERATION.product.pId == 0)
-                // console.warn('ERROR ERROR ERROR ERROR ERROR ERROR ERROR');
+                // console.warn("ERROR ERROR ERROR ERROR ERROR ERROR ERROR");
                 this.prodService.selectFirstProduct();
         }
         console.warn(this.opService.OPERATION.product.pId);
@@ -4335,7 +4402,7 @@ var InputFormComponent = (function () {
             this.product = this.opService.OPERATION.product;
             this.setFields(this.opService.OPERATION.product.pInputFields);
             if (this.masked == []) {
-                // console.error('REINIT MASKED');
+                // console.error("REINIT MASKED");
                 this.masked = this.opService.OPERATION.maskedValues;
             }
             var coins = Math.round(this.opService.OPERATION.amount % 100);
@@ -4354,7 +4421,7 @@ var InputFormComponent = (function () {
             this.validateSum();
             this.comment.setValue(this.opService.OPERATION.comment);
             console.warn(this.fields);
-            // console.warn('end end end end end end ');
+            // console.warn("end end end end end end ");
         }
         else {
             this.product = new __WEBPACK_IMPORTED_MODULE_4__models_product__["a" /* Product */](0, 0, [{
@@ -4419,7 +4486,7 @@ var InputFormComponent = (function () {
     };
     InputFormComponent.prototype.longPress = function () {
         var _this = this;
-        // alert('pressed');
+        // alert("pressed");
         console.log('MOUSE DOWN Longpress');
         var next = true;
         if (this.product.pType === 2) {
@@ -4476,7 +4543,7 @@ var InputFormComponent = (function () {
     // ======== FIELDS METHODS ==============================================================================================
     InputFormComponent.prototype.setActiveInput = function (type, fOrderId) {
         console.log('setActiveInput( ' + type + ' , ' + fOrderId + ' )');
-        // console.log('field = ' + field + '  fieldId = ' + (field === 2 ? this.fields[field].fId : 0));
+        // console.log("field = " + field + "  fieldId = " + (field === 2 ? this.fields[field].fId : 0));
         var field;
         this.activeInput = {
             inputType: type,
@@ -4512,7 +4579,7 @@ var InputFormComponent = (function () {
         var number = this.findNumber.substring(0, 3);
         console.log('CODE CHANGE');
         console.log(number);
-        // console.log('======================================================');
+        // console.log("======================================================");
         if (Number(number) > 10) {
             var prod = 0;
             var prodArray = [[],
@@ -4563,7 +4630,7 @@ var InputFormComponent = (function () {
         this.fields = this.fields.sort(function (a, b) {
             return (a.fOrder < b.fOrder) ? 1 : ((b.fOrder < a.fOrder) ? -1 : 0);
         });
-        // console.log('FIELDS');
+        // console.log("FIELDS");
         // console.log(this.fields);
         if (this.opService.OPERATION.maskedValues.length > 0) {
             this.masked = this.opService.OPERATION.maskedValues;
@@ -4572,7 +4639,7 @@ var InputFormComponent = (function () {
         console.log(this.fields);
     };
     InputFormComponent.prototype.formMasked = function (fields) {
-        console.log('Form masked');
+        console.log("Form masked");
         this.masked = [];
         for (var i = 0; i < fields.length; i++) {
             this.masked.push({
@@ -4585,7 +4652,7 @@ var InputFormComponent = (function () {
     InputFormComponent.prototype.setFocusedField = function () {
         var _this = this;
         setTimeout(function () {
-            // let field = document.getElementById('field' + this.product.pInputFields[0].fId);
+            // let field = document.getElementById("field" + this.product.pInputFields[0].fId);
             var field;
             if (document.getElementById('findNumber')) {
                 field = document.getElementById('findNumber');
@@ -4609,7 +4676,7 @@ var InputFormComponent = (function () {
                 if (__WEBPACK_IMPORTED_MODULE_6__services_global_service__["a" /* GlobalService */].checkMobileView()) {
                     _this.setActiveInput(2, 1);
                     field = document.getElementById('input-wrap');
-                    // field = document.getElementById('but0');
+                    // field = document.getElementById("but0");
                     if (field) {
                         field.scrollIntoView();
                     }
@@ -4687,7 +4754,7 @@ var InputFormComponent = (function () {
     };
     // ======== AMOUNT METHODS ==============================================================================================
     InputFormComponent.prototype.clearSum = function () {
-        // console.error('SUM CLEARED');
+        // console.error("SUM CLEARED");
         this.amount = '';
         this.coins = '00';
         this.validateSum();
@@ -4713,7 +4780,7 @@ var InputFormComponent = (function () {
         this.validateSum();
     };
     InputFormComponent.prototype.insertCoins = function (val) {
-        // console.error('KEY PRESSED = ' + val.key);
+        // console.error("KEY PRESSED = " + val.key);
         var field = document.getElementById('coins');
         var num = val.key.replace(/\[^0-9]/g, '');
         var text = field.textContent;
@@ -4728,7 +4795,7 @@ var InputFormComponent = (function () {
         if (val.keyCode >= 48 && val.keyCode <= 57) {
             // console.error('number');
             if (this.isNumber(parseInt(num)) || num == '0') {
-                // console.log('2 KEY PRESSED  = ' + val.key);
+                // console.log("2 KEY PRESSED  = " + val.key);
                 if (this.coins.length == 2) {
                     this.coins = this.coins.substring(1, 2) + num;
                     field.value = field.value + num;
@@ -4773,7 +4840,7 @@ var InputFormComponent = (function () {
         this.validateSum();
     };
     InputFormComponent.prototype.validateSum = function () {
-        console.warn('validateSum');
+        console.warn("validateSum");
         if (parseFloat(this.amount + '.' + this.coins)) {
             var amount = parseFloat(this.amount + '.' + this.coins) || 0;
             console.warn('AMOUNT = ' + amount);
@@ -4808,7 +4875,7 @@ var InputFormComponent = (function () {
     };
     // ======== CREATE OPERATION METHODS ====================================================================================
     InputFormComponent.prototype.checkOperation = function () {
-        console.warn('checkOperation');
+        console.warn("checkOperation");
         if (this.product.pType === 2) {
             if (parseFloat(this.amount + '.' + this.coins)) {
                 if ((parseFloat(this.amount + '.' + this.coins) * 100) < this.product.pAmountMin) {
@@ -4848,7 +4915,7 @@ var InputFormComponent = (function () {
                 comForValue = com[i].cMin_amount;
             }
         }
-        console.warn('COMMISSIONS');
+        console.warn("COMMISSIONS");
         // console.warn(comForValue);
         for (var i = 0; i < com.length; i++) {
             if (com[i].cMin_amount === comForValue) {
@@ -4867,7 +4934,7 @@ var InputFormComponent = (function () {
     };
     // ======== KEYBOARD EVENTS METHOD ======================================================================================
     InputFormComponent.prototype.keyboardPress = function (val) {
-        console.warn('PLAY SOUND');
+        console.warn("PLAY SOUND");
         __WEBPACK_IMPORTED_MODULE_6__services_global_service__["a" /* GlobalService */].audio.play();
         var input;
         // if (this.global.checkOnline())
@@ -4885,7 +4952,7 @@ var InputFormComponent = (function () {
                     this.searchByNumber(this.findNumber);
                     // console.log(this.findNumber);
                 }
-                // console.warn('PLAY SOUND');
+                // console.warn("PLAY SOUND");
                 // GlobalService.audio.play();
                 input = document.getElementById('findNumber');
                 input.focus();
@@ -4930,7 +4997,7 @@ var InputFormComponent = (function () {
                         this.fields[fieldIndex].value = this.fields[fieldIndex].value.substring(0, this.fields[fieldIndex].value.length - 1);
                     }
                 }
-                // console.warn('PLAY SOUND');
+                // console.warn("PLAY SOUND");
                 // GlobalService.audio.play();
             }
             var field = void 0;
@@ -4938,7 +5005,7 @@ var InputFormComponent = (function () {
             if (this.activeInput.inputType === 3 && (this.isNumber(val) || val == '.')) {
                 if (this.activeInput.fieldIndex == 1) {
                     if (this.isNumber(parseInt(val)) && val != '.') {
-                        console.log('KEY PRESSED = ' + val);
+                        console.log("KEY PRESSED = " + val);
                         if (this.coins.length == 2) {
                             this.coins = this.coins.substring(1, 2) + val;
                             field = document.getElementById('coins');
@@ -4966,8 +5033,8 @@ var InputFormComponent = (function () {
                         this.amount = this.amount + s;
                     }
                 }
-                console.warn('TOTAL AMOUNT = ' + this.amount + '.' + this.coins);
-                // console.warn('PLAY SOUND');
+                console.warn("TOTAL AMOUNT = " + this.amount + "." + this.coins);
+                // console.warn("PLAY SOUND");
                 // GlobalService.audio.play();
             }
             /** INPUT COMMENT */
@@ -4984,13 +5051,13 @@ var InputFormComponent = (function () {
                     this.comment.setValue(this.comment.value.substring(0, this.comment.value.length - 1));
                 }
                 document.getElementById('remark-text').focus();
-                // console.warn('PLAY SOUND');
+                // console.warn("PLAY SOUND");
                 // GlobalService.audio.play();
             }
         }
     };
     InputFormComponent.prototype.goToVerification = function (noVerify) {
-        console.warn('goToVerification');
+        console.warn("goToVerification");
         console.log('AMOUNT = ' + this.amount + '.' + this.coins);
         console.warn(this.masked);
         console.warn(this.comment.value);
@@ -5012,7 +5079,7 @@ var InputFormComponent = (function () {
         console.warn('MASKED VALUES');
         console.warn(this.opService.OPERATION.maskedValues);
         this.opService.OPERATION.commission = this.calcCommission(amount);
-        // console.log('COMMISSION = ' + this.opService.OPERATION.commission);
+        // console.log("COMMISSION = " + this.opService.OPERATION.commission);
         if (this.product.pType === 1) {
             this.opService.OPERATION.amount = Number(this.product.pNominal);
         }
@@ -5083,6 +5150,32 @@ var InputFormComponent = (function () {
     InputFormComponent.prototype.isNumber = function (val) {
         return !Number.isNaN(Number.parseFloat(val));
     };
+    // KEYBOARD HANDLERS
+    InputFormComponent.prototype.changeKeyboard = function (val) {
+        this.currKeyboard = val;
+        this.upperCase = false;
+    };
+    InputFormComponent.prototype.pressButton = function (val) {
+        if (!this.upperCase) {
+            this.keyboardPress(val);
+        }
+        else {
+            this.keyboardPress(val.toUpperCase());
+        }
+    };
+    InputFormComponent.prototype.changeToUpper = function () {
+        this.upperCase = !this.upperCase;
+        var letters = document.getElementsByClassName('keyboard-wrap letters')[0];
+        if (this.upperCase) {
+            letters.classList.add('uppercased');
+        }
+        else {
+            letters.classList.remove('uppercased');
+        }
+    };
+    InputFormComponent.prototype.removeSymbol = function () {
+        this.keyboardPress('bksp');
+    };
     InputFormComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'app-input-form',
@@ -5131,7 +5224,6 @@ module.exports = "<div [ngSwitch]=\"currKeyboard\" id=\"keyboard\" style=\"paddi
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return KeyboardComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_operation_service__ = __webpack_require__("../../../../../src/app/_services/operation.service.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -5142,10 +5234,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
-
-var KeyboardComponent = (function () {
-    function KeyboardComponent(opService) {
-        this.opService = opService;
+var KeyboardComponent = /** @class */ (function () {
+    function KeyboardComponent() {
         this.currKeyboard = 1;
         this.upperCase = false;
         this.onBtnClick = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["EventEmitter"]();
@@ -5185,7 +5275,7 @@ var KeyboardComponent = (function () {
             template: __webpack_require__("../../../../../src/app/keyboard/keyboard.component.html"),
             styles: [__webpack_require__("../../../../../src/app/keyboard/keyboard.component.css")]
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__services_operation_service__["a" /* OperationService */]])
+        __metadata("design:paramtypes", [])
     ], KeyboardComponent);
     return KeyboardComponent;
 }());
@@ -5238,7 +5328,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var LoginComponent = (function () {
+var LoginComponent = /** @class */ (function () {
     function LoginComponent(route, router, configuration, authenticationService, user) {
         this.route = route;
         this.router = router;
@@ -5397,7 +5487,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var NavMenuComponent = (function () {
+var NavMenuComponent = /** @class */ (function () {
     function NavMenuComponent(dateAdapter, global) {
         var _this = this;
         this.dateAdapter = dateAdapter;
@@ -5522,7 +5612,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var NewsComponent = (function () {
+var NewsComponent = /** @class */ (function () {
     function NewsComponent(service, alert) {
         this.service = service;
         this.alert = alert;
@@ -5628,7 +5718,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var OtpAuthComponent = (function () {
+var OtpAuthComponent = /** @class */ (function () {
     function OtpAuthComponent(route, router, configuration, authenticationService, user) {
         this.route = route;
         this.router = router;
@@ -5762,7 +5852,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var ProductListComponent = (function () {
+var ProductListComponent = /** @class */ (function () {
     function ProductListComponent(service, catService, opService, alert) {
         var _this = this;
         this.service = service;
@@ -5917,7 +6007,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var AuthHistoryComponent = (function () {
+var AuthHistoryComponent = /** @class */ (function () {
     function AuthHistoryComponent(report, alert) {
         this.report = report;
         this.alert = alert;
@@ -5972,7 +6062,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/report_components/collection/collection.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div>\r\n  <h5 id=\"actName\" style=\"\r\n    max-width: 500px;\r\n    margin: 0 auto;\">\r\n    {{'collection'|translate}}\r\n    <button\r\n      *ngIf=\"showPrint\"\r\n      type=\"button\"\r\n      class=\"print\" style=\"padding-top: 7px\"\r\n      (click)=\" printReport()\">\r\n      <img src=\"assets/images/icons/print.png\" alt=\"\">\r\n    </button>\r\n  </h5>\r\n  <div style=\"margin-left: 15px; padding-top: 7px;\">\r\n\r\n  </div>\r\n\r\n  <div class=\"report_container\"\r\n       [innerHTML]=\"reportContent|safeHtml\">\r\n  </div>\r\n  <div *ngIf=\"success_collect\"\r\n       style=\"margin: 15px auto; width:180px; color: forestgreen; font-weight: bold\">\r\n    {{'success_collect'|translate}}\r\n  </div>\r\n\r\n  <div class=\"button-container\"\r\n       style=\"text-align: center;  margin: 0 auto\">\r\n    <button [disabled]=\"loading1\" [ngClass]=\"{'disabled':loading1}\"\r\n            class=\"rep_btn\" style=\"height:60px\"\r\n            (click)=\"createReport()\">{{actName|translate}}\r\n    </button>\r\n    <div style=\"text-align: center\">\r\n      <img *ngIf=\"loading1\" style=\"width: 24px\"\r\n           src=\"data:image/gif;base64,R0lGODlhEAAQAPIAAP///wAAAMLCwkJCQgAAAGJiYoKCgpKSkiH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAEAAQAAADMwi63P4wyklrE2MIOggZnAdOmGYJRbExwroUmcG2LmDEwnHQLVsYOd2mBzkYDAdKa+dIAAAh+QQJCgAAACwAAAAAEAAQAAADNAi63P5OjCEgG4QMu7DmikRxQlFUYDEZIGBMRVsaqHwctXXf7WEYB4Ag1xjihkMZsiUkKhIAIfkECQoAAAAsAAAAABAAEAAAAzYIujIjK8pByJDMlFYvBoVjHA70GU7xSUJhmKtwHPAKzLO9HMaoKwJZ7Rf8AYPDDzKpZBqfvwQAIfkECQoAAAAsAAAAABAAEAAAAzMIumIlK8oyhpHsnFZfhYumCYUhDAQxRIdhHBGqRoKw0R8DYlJd8z0fMDgsGo/IpHI5TAAAIfkECQoAAAAsAAAAABAAEAAAAzIIunInK0rnZBTwGPNMgQwmdsNgXGJUlIWEuR5oWUIpz8pAEAMe6TwfwyYsGo/IpFKSAAAh+QQJCgAAACwAAAAAEAAQAAADMwi6IMKQORfjdOe82p4wGccc4CEuQradylesojEMBgsUc2G7sDX3lQGBMLAJibufbSlKAAAh+QQJCgAAACwAAAAAEAAQAAADMgi63P7wCRHZnFVdmgHu2nFwlWCI3WGc3TSWhUFGxTAUkGCbtgENBMJAEJsxgMLWzpEAACH5BAkKAAAALAAAAAAQABAAAAMyCLrc/jDKSatlQtScKdceCAjDII7HcQ4EMTCpyrCuUBjCYRgHVtqlAiB1YhiCnlsRkAAAOwAAAAAAAAAAAA==\"/>\r\n    </div>\r\n  </div>\r\n\r\n  <div style=\"display: block\">\r\n    <h5 style=\"\r\n    max-width: 500px;\r\n    margin: 0 auto;\">\r\n      {{'collection_history'|translate}}\r\n    </h5>\r\n\r\n    <div id=\"date-container\" class=\"date-container\">\r\n      <div class=\"field\">\r\n        <mat-form-field style=\"width: 120px\">\r\n          <input id=\"StartDate\" class=\"picker-input\" style=\"border-bottom: 0\"\r\n                 matInput (onChange)=\"checkDates()\" [(ngModel)]=\"sDate\" [matDatepicker]=\"startDate\"\r\n                 placeholder=\"\">\r\n          <mat-datepicker-toggle matSuffix [for]=\"startDate\"></mat-datepicker-toggle>\r\n          <mat-datepicker #startDate [touchUi]=\"mobileView\"></mat-datepicker>\r\n        </mat-form-field>\r\n      </div>\r\n      <span style=\"padding-top: 22px\"> - </span>\r\n      <div class=\"field\">\r\n        <mat-form-field style=\"width: 120px\">\r\n          <input id=\"EndDate\" class=\"picker-input\" style=\"border-bottom: 0\"\r\n                 matInput (onChange)=\"checkDates()\" [(ngModel)]=\"eDate\" [matDatepicker]=\"endDate\"\r\n                 placeholder=\"\">\r\n          <mat-datepicker-toggle matSuffix [for]=\"endDate\"></mat-datepicker-toggle>\r\n          <mat-datepicker #endDate [touchUi]=\"mobileView\"></mat-datepicker>\r\n        </mat-form-field>\r\n      </div>\r\n    </div>\r\n    <div id=\"date-error\" style=\"text-align: center; color:red; display: none\">\r\n      {{'date_range_error'|translate}}\r\n    </div>\r\n\r\n    <div class=\"button-container\">\r\n      <button [disabled]=\"loading2\" [ngClass]=\"{'disabled':loading2}\"\r\n              id=\"report_button\" class=\"rep_btn\"\r\n              (click)=\"getCollectionHistory()\">{{'show'|translate}}\r\n      </button>\r\n      <div style=\"text-align: center\">\r\n        <img *ngIf=\"loading2\" style=\"width: 24px\"\r\n             src=\"data:image/gif;base64,R0lGODlhEAAQAPIAAP///wAAAMLCwkJCQgAAAGJiYoKCgpKSkiH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAEAAQAAADMwi63P4wyklrE2MIOggZnAdOmGYJRbExwroUmcG2LmDEwnHQLVsYOd2mBzkYDAdKa+dIAAAh+QQJCgAAACwAAAAAEAAQAAADNAi63P5OjCEgG4QMu7DmikRxQlFUYDEZIGBMRVsaqHwctXXf7WEYB4Ag1xjihkMZsiUkKhIAIfkECQoAAAAsAAAAABAAEAAAAzYIujIjK8pByJDMlFYvBoVjHA70GU7xSUJhmKtwHPAKzLO9HMaoKwJZ7Rf8AYPDDzKpZBqfvwQAIfkECQoAAAAsAAAAABAAEAAAAzMIumIlK8oyhpHsnFZfhYumCYUhDAQxRIdhHBGqRoKw0R8DYlJd8z0fMDgsGo/IpHI5TAAAIfkECQoAAAAsAAAAABAAEAAAAzIIunInK0rnZBTwGPNMgQwmdsNgXGJUlIWEuR5oWUIpz8pAEAMe6TwfwyYsGo/IpFKSAAAh+QQJCgAAACwAAAAAEAAQAAADMwi6IMKQORfjdOe82p4wGccc4CEuQradylesojEMBgsUc2G7sDX3lQGBMLAJibufbSlKAAAh+QQJCgAAACwAAAAAEAAQAAADMgi63P7wCRHZnFVdmgHu2nFwlWCI3WGc3TSWhUFGxTAUkGCbtgENBMJAEJsxgMLWzpEAACH5BAkKAAAALAAAAAAQABAAAAMyCLrc/jDKSatlQtScKdceCAjDII7HcQ4EMTCpyrCuUBjCYRgHVtqlAiB1YhiCnlsRkAAAOwAAAAAAAAAAAA==\"/>\r\n      </div>\r\n    </div>\r\n\r\n    <div id=\"report_container2\">\r\n      <div *ngIf=\"collectionList.length>0\" id=\"reports\">\r\n        <div>\r\n\r\n          <table style=\"width: 90%; margin: 0 auto\">\r\n            <thead class=\"table-head\">\r\n            <th>{{'op_no'|translate}}</th>\r\n            <th>{{'tradePoint'|translate}}</th>\r\n            <th>№</th>\r\n            <th>{{'collection_date'|translate}}</th>\r\n            <th *ngIf=\"!mobileView\">{{'nominal'|translate}}</th>\r\n            <th *ngIf=\"!mobileView\">{{'commission'|translate}}</th>\r\n            <th *ngIf=\"!mobileView\">{{'total'|translate}}</th>\r\n            <th>{{'op_count'|translate}}</th>\r\n            <th *ngIf=\"!mobileView\">{{'incomeTariff'|translate}}</th>\r\n            <th>{{'collectorGet'|translate}}</th>\r\n            <!--<th>Первая операция</th>-->\r\n            <!--<th>Последняя операция</th>-->\r\n            </thead>\r\n            <!--<tbody *ngFor=\"let report of collectionList\"></tbody>-->\r\n            <tbody>\r\n            <tr class='collection' *ngFor=\"let collection of collectionList|orderBy:'-id'\"\r\n                (click)=\"openDialog(collection.opId)\">\r\n              <td>{{collection.opId}}</td>\r\n              <td>{{collection.tradePoint}}</td>\r\n              <td style=\"width: 35px\">{{collection.id}}</td>\r\n              <td style=\"\">{{collection.date|date:\"d.MM.yy HH:mm:ss\"}}</td>\r\n              <td *ngIf=\"!mobileView\">{{collection.nominal|myCurrency}}</td>\r\n              <td *ngIf=\"!mobileView\">{{collection.commission|myCurrency}}</td>\r\n              <td *ngIf=\"!mobileView\">{{(collection.commission+collection.nominal)|myCurrency}}</td>\r\n              <td>{{collection.quantity}}</td>\r\n              <td *ngIf=\"!mobileView\">{{(collection.incomeTariff||'_')|myCurrency}}</td>\r\n              <td>{{collection.collectorGet|myCurrency}}</td>\r\n              <!--<td *ngIf=\"collection.firstOperation\">{{collection.firstOperation|date:\"d.MM.yy HH:mm:ss\"}}</td>-->\r\n              <!--<td *ngIf=\"collection.lastOperation\">{{collection.lastOperation|date:\"d.MM.yy HH:mm:ss\"}}</td>-->\r\n            </tr>\r\n            </tbody>\r\n          </table>\r\n        </div>\r\n      </div>\r\n    </div>\r\n\r\n  </div>\r\n</div>\r\n\r\n"
+module.exports = "<div>\r\n  <h5 id=\"actName\" style=\"\r\n    max-width: 500px;\r\n    margin: 0 auto;\">\r\n    {{'collection'|translate}}\r\n    <button\r\n      *ngIf=\"showPrint\"\r\n      type=\"button\"\r\n      class=\"print\" style=\"padding-top: 7px\"\r\n      (click)=\" printReport()\">\r\n      <img src=\"assets/images/icons/print.png\" alt=\"\">\r\n    </button>\r\n  </h5>\r\n  <div style=\"margin-left: 15px; padding-top: 7px;\">\r\n\r\n  </div>\r\n\r\n  <div class=\"report_container\"\r\n       [innerHTML]=\"reportContent|safeHtml\">\r\n  </div>\r\n  <div *ngIf=\"success_collect\"\r\n       style=\"margin: 15px auto; width:180px; color: forestgreen; font-weight: bold\">\r\n    {{'success_collect'|translate}}\r\n  </div>\r\n\r\n  <div class=\"button-container\"\r\n       style=\"text-align: center;  margin: 0 auto\">\r\n    <button [disabled]=\"loading1\" [ngClass]=\"{'disabled':loading1}\"\r\n            class=\"rep_btn\" style=\"height:60px;width: 160px\"\r\n            (click)=\"createReport()\">{{actName|translate}}\r\n    </button>\r\n    <div style=\"text-align: center\">\r\n      <img *ngIf=\"loading1\" style=\"width: 24px\"\r\n           src=\"data:image/gif;base64,R0lGODlhEAAQAPIAAP///wAAAMLCwkJCQgAAAGJiYoKCgpKSkiH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAEAAQAAADMwi63P4wyklrE2MIOggZnAdOmGYJRbExwroUmcG2LmDEwnHQLVsYOd2mBzkYDAdKa+dIAAAh+QQJCgAAACwAAAAAEAAQAAADNAi63P5OjCEgG4QMu7DmikRxQlFUYDEZIGBMRVsaqHwctXXf7WEYB4Ag1xjihkMZsiUkKhIAIfkECQoAAAAsAAAAABAAEAAAAzYIujIjK8pByJDMlFYvBoVjHA70GU7xSUJhmKtwHPAKzLO9HMaoKwJZ7Rf8AYPDDzKpZBqfvwQAIfkECQoAAAAsAAAAABAAEAAAAzMIumIlK8oyhpHsnFZfhYumCYUhDAQxRIdhHBGqRoKw0R8DYlJd8z0fMDgsGo/IpHI5TAAAIfkECQoAAAAsAAAAABAAEAAAAzIIunInK0rnZBTwGPNMgQwmdsNgXGJUlIWEuR5oWUIpz8pAEAMe6TwfwyYsGo/IpFKSAAAh+QQJCgAAACwAAAAAEAAQAAADMwi6IMKQORfjdOe82p4wGccc4CEuQradylesojEMBgsUc2G7sDX3lQGBMLAJibufbSlKAAAh+QQJCgAAACwAAAAAEAAQAAADMgi63P7wCRHZnFVdmgHu2nFwlWCI3WGc3TSWhUFGxTAUkGCbtgENBMJAEJsxgMLWzpEAACH5BAkKAAAALAAAAAAQABAAAAMyCLrc/jDKSatlQtScKdceCAjDII7HcQ4EMTCpyrCuUBjCYRgHVtqlAiB1YhiCnlsRkAAAOwAAAAAAAAAAAA==\"/>\r\n    </div>\r\n  </div>\r\n\r\n  <div style=\"display: block\">\r\n    <h5 style=\"\r\n    max-width: 500px;\r\n    margin: 0 auto;\">\r\n      {{'collection_history'|translate}}\r\n    </h5>\r\n\r\n    <div id=\"date-container\" class=\"date-container\">\r\n      <div class=\"field\">\r\n        <mat-form-field style=\"width: 120px\">\r\n          <input id=\"StartDate\" class=\"picker-input\" style=\"border-bottom: 0\"\r\n                 matInput (onChange)=\"checkDates()\" [(ngModel)]=\"sDate\" [matDatepicker]=\"startDate\"\r\n                 placeholder=\"\">\r\n          <mat-datepicker-toggle matSuffix [for]=\"startDate\"></mat-datepicker-toggle>\r\n          <mat-datepicker #startDate [touchUi]=\"mobileView\"></mat-datepicker>\r\n        </mat-form-field>\r\n      </div>\r\n      <span style=\"padding-top: 22px\"> - </span>\r\n      <div class=\"field\">\r\n        <mat-form-field style=\"width: 120px\">\r\n          <input id=\"EndDate\" class=\"picker-input\" style=\"border-bottom: 0\"\r\n                 matInput (onChange)=\"checkDates()\" [(ngModel)]=\"eDate\" [matDatepicker]=\"endDate\"\r\n                 placeholder=\"\">\r\n          <mat-datepicker-toggle matSuffix [for]=\"endDate\"></mat-datepicker-toggle>\r\n          <mat-datepicker #endDate [touchUi]=\"mobileView\"></mat-datepicker>\r\n        </mat-form-field>\r\n      </div>\r\n    </div>\r\n    <div id=\"date-error\" style=\"text-align: center; color:red; display: none\">\r\n      {{'date_range_error'|translate}}\r\n    </div>\r\n\r\n    <div class=\"button-container\">\r\n      <button [disabled]=\"loading2\" [ngClass]=\"{'disabled':loading2}\"\r\n              id=\"report_button\" class=\"rep_btn\"\r\n              (click)=\"getCollectionHistory()\">{{'show'|translate}}\r\n      </button>\r\n      <div style=\"text-align: center\">\r\n        <img *ngIf=\"loading2\" style=\"width: 24px\"\r\n             src=\"data:image/gif;base64,R0lGODlhEAAQAPIAAP///wAAAMLCwkJCQgAAAGJiYoKCgpKSkiH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAEAAQAAADMwi63P4wyklrE2MIOggZnAdOmGYJRbExwroUmcG2LmDEwnHQLVsYOd2mBzkYDAdKa+dIAAAh+QQJCgAAACwAAAAAEAAQAAADNAi63P5OjCEgG4QMu7DmikRxQlFUYDEZIGBMRVsaqHwctXXf7WEYB4Ag1xjihkMZsiUkKhIAIfkECQoAAAAsAAAAABAAEAAAAzYIujIjK8pByJDMlFYvBoVjHA70GU7xSUJhmKtwHPAKzLO9HMaoKwJZ7Rf8AYPDDzKpZBqfvwQAIfkECQoAAAAsAAAAABAAEAAAAzMIumIlK8oyhpHsnFZfhYumCYUhDAQxRIdhHBGqRoKw0R8DYlJd8z0fMDgsGo/IpHI5TAAAIfkECQoAAAAsAAAAABAAEAAAAzIIunInK0rnZBTwGPNMgQwmdsNgXGJUlIWEuR5oWUIpz8pAEAMe6TwfwyYsGo/IpFKSAAAh+QQJCgAAACwAAAAAEAAQAAADMwi6IMKQORfjdOe82p4wGccc4CEuQradylesojEMBgsUc2G7sDX3lQGBMLAJibufbSlKAAAh+QQJCgAAACwAAAAAEAAQAAADMgi63P7wCRHZnFVdmgHu2nFwlWCI3WGc3TSWhUFGxTAUkGCbtgENBMJAEJsxgMLWzpEAACH5BAkKAAAALAAAAAAQABAAAAMyCLrc/jDKSatlQtScKdceCAjDII7HcQ4EMTCpyrCuUBjCYRgHVtqlAiB1YhiCnlsRkAAAOwAAAAAAAAAAAA==\"/>\r\n      </div>\r\n    </div>\r\n\r\n    <div id=\"report_container2\">\r\n      <div *ngIf=\"collectionList.length>0\" id=\"reports\">\r\n        <div>\r\n\r\n          <table style=\"width: 90%; margin: 0 auto\">\r\n            <thead class=\"table-head\">\r\n            <th>{{'op_no'|translate}}</th>\r\n            <th *ngIf=\"!mobileView\">{{'tradePoint'|translate}}</th>\r\n            <th>№</th>\r\n            <th>{{'collection_date'|translate}}</th>\r\n            <th *ngIf=\"!mobileView\">{{'nominal'|translate}}</th>\r\n            <th *ngIf=\"!mobileView\">{{'commission'|translate}}</th>\r\n            <th *ngIf=\"!mobileView\">{{'total'|translate}}</th>\r\n            <th>{{'op_count'|translate}}</th>\r\n            <th *ngIf=\"!mobileView\">{{'incomeTariff'|translate}}</th>\r\n            <th>{{'collectorGet'|translate}}</th>\r\n            <!--<th>Первая операция</th>-->\r\n            <!--<th>Последняя операция</th>-->\r\n            </thead>\r\n            <!--<tbody *ngFor=\"let report of collectionList\"></tbody>-->\r\n            <tbody>\r\n            <tr class='collection' *ngFor=\"let collection of collectionList|orderBy:'-id'\"\r\n                (click)=\"openDialog(collection.opId)\">\r\n              <td>{{collection.opId}}</td>\r\n              <td *ngIf=\"!mobileView\">{{collection.tradePoint}}</td>\r\n              <td style=\"width: 35px\">{{collection.id}}</td>\r\n              <td style=\"\">{{collection.date|date:\"d.MM.yy HH:mm:ss\"}}</td>\r\n              <td *ngIf=\"!mobileView\">{{collection.nominal|myCurrency}}</td>\r\n              <td *ngIf=\"!mobileView\">{{collection.commission|myCurrency}}</td>\r\n              <td *ngIf=\"!mobileView\">{{(collection.commission+collection.nominal)|myCurrency}}</td>\r\n              <td>{{collection.quantity}}</td>\r\n              <td *ngIf=\"!mobileView\">{{(collection.incomeTariff||'_')|myCurrency}}</td>\r\n              <td>{{collection.collectorGet|myCurrency}}</td>\r\n              <!--<td *ngIf=\"collection.firstOperation\">{{collection.firstOperation|date:\"d.MM.yy HH:mm:ss\"}}</td>-->\r\n              <!--<td *ngIf=\"collection.lastOperation\">{{collection.lastOperation|date:\"d.MM.yy HH:mm:ss\"}}</td>-->\r\n            </tr>\r\n            </tbody>\r\n          </table>\r\n        </div>\r\n      </div>\r\n    </div>\r\n\r\n  </div>\r\n</div>\r\n\r\n"
 
 /***/ }),
 
@@ -6010,7 +6100,7 @@ var __param = (this && this.__param) || function (paramIndex, decorator) {
 
 
 
-var CollectionComponent = (function () {
+var CollectionComponent = /** @class */ (function () {
     function CollectionComponent(global, report, alert, dialog) {
         this.global = global;
         this.report = report;
@@ -6177,8 +6267,8 @@ var CollectionComponent = (function () {
             var config = {};
             if (window.innerWidth < 721) {
                 config = {
-                    height: '80vh',
-                    width: '80vw'
+                    height: '85%',
+                    width: '96vw'
                 };
             }
             else {
@@ -6209,7 +6299,7 @@ var CollectionComponent = (function () {
     return CollectionComponent;
 }());
 
-var MyCollection = (function () {
+var MyCollection = /** @class */ (function () {
     function MyCollection(dialogRef, report, data) {
         this.dialogRef = dialogRef;
         this.report = report;
@@ -6249,14 +6339,14 @@ var MyCollection = (function () {
 /***/ "../../../../../src/app/report_components/collection/dialog.html":
 /***/ (function(module, exports) {
 
-module.exports = "<button mat-button [mat-dialog-close]=\"true\"\r\n        style=\"float:right; margin:-10px -10px -25px 0; outline:none; border: 0; background-color: white\">X\r\n</button>\r\n\r\n<div *ngIf=\"Collection!=null\" class=\"keyboard-logos-wrap clearfix\" id=\"dialog-header\">\r\n\r\n  <table class=\"collection-table\" style=\"margin: 0 auto;\">\r\n    <tr>\r\n      <td>\r\n        <label>{{'collection'|translate}}</label>\r\n      </td>\r\n      <td colspan=\"4\">{{Collection.id}}</td>\r\n    </tr>\r\n    <tr>\r\n      <td>\r\n        <label>{{'tradePoint'|translate}}</label>\r\n      </td>\r\n      <td colspan=\"4\"><label>« {{Collection.tradePoint}} » </label> - ({{Collection.pointAddr}})</td>\r\n    </tr>\r\n    <tr>\r\n      <td>\r\n        <label>{{'collection_date'|translate}}</label>\r\n      </td>\r\n      <td colspan=\"4\">{{Collection.date|date:'d.MM.yy HH:mm:ss'}}</td>\r\n    </tr>\r\n    <tr>\r\n      <td rowspan=\"2\">\r\n        <label>{{'operations'|translate}}</label>\r\n      </td>\r\n      <td>\r\n        <label>{{'nominal'|translate}}</label>\r\n      </td>\r\n      <td>\r\n        <label>{{'commission'|translate}}</label>\r\n      </td>\r\n      <td>\r\n        <label>{{'total'|translate}}</label>\r\n      </td>\r\n      <td>\r\n        <label>{{'op_count'|translate}}</label>\r\n      </td>\r\n    </tr>\r\n    <tr>\r\n      <td>{{Collection.nominal|myCurrency}}</td>\r\n      <td>{{Collection.commission|myCurrency}}</td>\r\n      <td>{{(Collection.nominal+Collection.commission)|myCurrency}}</td>\r\n      <td>{{Collection.quantity}}</td>\r\n    </tr>\r\n    <tr>\r\n      <td>\r\n        <label>{{'collectorGet'|translate}}</label>\r\n      </td>\r\n      <td colspan=\"4\">{{Collection.collectorGet|myCurrency}}</td>\r\n    </tr>\r\n  </table>\r\n  <br>\r\n\r\n\r\n  <table class='collection-table' style=\"width: 90%; margin: 0 auto\">\r\n    <thead>\r\n    <td><label>{{'product'|translate}}</label></td>\r\n    <td><label>{{'Cashier'|translate}}</label></td>\r\n    <td><label>{{'op_count'|translate}}</label></td>\r\n    <td><label>{{'nominal'|translate}}</label></td>\r\n    <td><label>{{'commission'|translate}}</label></td>\r\n    <td><label>{{'total'|translate}}</label></td>\r\n    <td><label>{{'incomeTariff'|translate}}</label></td>\r\n    <td><label>{{'first_op'|translate}}</label></td>\r\n    <td><label>{{'last_op'|translate}}</label></td>\r\n    </thead>\r\n    <tbody>\r\n    <tr *ngFor=\"let record of Collection.saleRecord\">\r\n      <td>{{record.article}}</td>\r\n      <td>{{record.cashier}}</td>\r\n      <td>{{record.quantity}}</td>\r\n      <td>{{record.nominal|myCurrency}}</td>\r\n      <td>{{record.commission|myCurrency}}</td>\r\n      <td>{{(record.commission+record.nominal)|myCurrency}}</td>\r\n      <td>{{record.incomeTariff|myCurrency}}</td>\r\n      <td>{{record.firstOperation|date:\"d.MM.yy HH:mm:ss\"||'_'}}</td>\r\n      <td>{{record.lastOperation|date:\"d.MM.yy HH:mm:ss\"||'_'}}</td>\r\n    <tr>\r\n    <tr style=\"background: #F3F3F3;\">\r\n      <td colspan=\"2\"><label>{{'total_op'|translate}} {{Collection.saleRecord.length}}):</label></td>\r\n      <td><label>{{Collection.quantity}}</label></td>\r\n      <td><label>{{Collection.nominal|myCurrency}}</label></td>\r\n      <td><label>{{Collection.commission|myCurrency}}</label></td>\r\n      <td><label>{{(Collection.nominal+Collection.commission)|myCurrency}}</label></td>\r\n      <td><label>{{(Collection.incomeTariff||'_')|myCurrency}}</label></td>\r\n      <td colspan=\"2\"></td>\r\n\r\n    </tr>\r\n    </tbody>\r\n  </table>\r\n\r\n</div>\r\n\r\n\r\n<div *ngIf=\"Collection==null\">\r\n  <h5 style=\"text-align: center\">There is no extended report for collection!</h5>\r\n</div>\r\n"
+module.exports = "<button mat-button [mat-dialog-close]=\"true\"\r\n        style=\"float:right; margin:-10px -10px -25px 0; outline:none; border: 0; background-color: white\">\r\n  <img src=\"assets/images/icons/clean-sum.png\">\r\n</button>\r\n\r\n<div *ngIf=\"Collection!=null\" [style.overflow-x]=\"mobileView? 'scroll':'normal'\"\r\n     class=\"keyboard-logos-wrap clearfix\" id=\"dialog-header\">\r\n\r\n  <table class=\"collection-table\" style=\"margin: 0 auto;\">\r\n    <tr>\r\n      <td>\r\n        <label>{{'collection'|translate}}</label>\r\n      </td>\r\n      <td colspan=\"4\">{{Collection.id}}</td>\r\n    </tr>\r\n    <tr>\r\n      <td>\r\n        <label>{{'tradePoint'|translate}}</label>\r\n      </td>\r\n      <td colspan=\"4\"><label>« {{Collection.tradePoint}} » </label> - ({{Collection.pointAddr}})</td>\r\n    </tr>\r\n    <tr>\r\n      <td>\r\n        <label>{{'collection_date'|translate}}</label>\r\n      </td>\r\n      <td colspan=\"4\">{{Collection.date|date:'d.MM.yy HH:mm:ss'}}</td>\r\n    </tr>\r\n    <tr>\r\n      <td rowspan=\"2\">\r\n        <label>{{'operations'|translate}}</label>\r\n      </td>\r\n      <td>\r\n        <label>{{'nominal'|translate}}</label>\r\n      </td>\r\n      <td>\r\n        <label>{{'commission'|translate}}</label>\r\n      </td>\r\n      <td>\r\n        <label>{{'total'|translate}}</label>\r\n      </td>\r\n      <td>\r\n        <label>{{'op_count'|translate}}</label>\r\n      </td>\r\n    </tr>\r\n    <tr>\r\n      <td>{{Collection.nominal|myCurrency}}</td>\r\n      <td>{{Collection.commission|myCurrency}}</td>\r\n      <td>{{(Collection.nominal+Collection.commission)|myCurrency}}</td>\r\n      <td>{{Collection.quantity}}</td>\r\n    </tr>\r\n    <tr>\r\n      <td>\r\n        <label>{{'collectorGet'|translate}}</label>\r\n      </td>\r\n      <td colspan=\"4\">{{Collection.collectorGet|myCurrency}}</td>\r\n    </tr>\r\n  </table>\r\n  <br>\r\n\r\n\r\n  <table class='collection-table' style=\"width: 90%; margin: 0 auto\">\r\n    <thead>\r\n    <td><label>{{'product'|translate}}</label></td>\r\n    <td><label>{{'Cashier'|translate}}</label></td>\r\n    <td><label>{{'op_count'|translate}}</label></td>\r\n    <td><label>{{'nominal'|translate}}</label></td>\r\n    <td><label>{{'commission'|translate}}</label></td>\r\n    <td><label>{{'total'|translate}}</label></td>\r\n    <td><label>{{'incomeTariff'|translate}}</label></td>\r\n    <td><label>{{'first_op'|translate}}</label></td>\r\n    <td><label>{{'last_op'|translate}}</label></td>\r\n    </thead>\r\n    <tbody>\r\n    <tr *ngFor=\"let record of Collection.saleRecord\">\r\n      <td>{{record.article}}</td>\r\n      <td>{{record.cashier}}</td>\r\n      <td>{{record.quantity}}</td>\r\n      <td>{{record.nominal|myCurrency}}</td>\r\n      <td>{{record.commission|myCurrency}}</td>\r\n      <td>{{(record.commission+record.nominal)|myCurrency}}</td>\r\n      <td>{{record.incomeTariff|myCurrency}}</td>\r\n      <td>{{record.firstOperation|date:\"d.MM.yy HH:mm:ss\"||'_'}}</td>\r\n      <td>{{record.lastOperation|date:\"d.MM.yy HH:mm:ss\"||'_'}}</td>\r\n    <tr>\r\n    <tr style=\"background: #F3F3F3;\">\r\n      <td colspan=\"2\"><label>{{'total_op'|translate}} {{Collection.saleRecord.length}}):</label></td>\r\n      <td><label>{{Collection.quantity}}</label></td>\r\n      <td><label>{{Collection.nominal|myCurrency}}</label></td>\r\n      <td><label>{{Collection.commission|myCurrency}}</label></td>\r\n      <td><label>{{(Collection.nominal+Collection.commission)|myCurrency}}</label></td>\r\n      <td><label>{{(Collection.incomeTariff||'_')|myCurrency}}</label></td>\r\n      <td colspan=\"2\"></td>\r\n\r\n    </tr>\r\n    </tbody>\r\n  </table>\r\n\r\n</div>\r\n\r\n\r\n<div *ngIf=\"Collection==null\">\r\n  <h5 style=\"text-align: center\">There is no extended report for collection!</h5>\r\n</div>\r\n"
 
 /***/ }),
 
 /***/ "../../../../../src/app/report_components/operation-report/dialog.html":
 /***/ (function(module, exports) {
 
-module.exports = "<button mat-button [mat-dialog-close]=\"true\"\r\n        style=\"float:right; margin:-10px -10px -25px 0; outline:none; border: 0; background-color: white\">X\r\n</button>\r\n<div class=\"keyboard-logos-wrap clearfix\" id=\"dialog-header\">\r\n  <img src=\"https://globalpay.com.ua/images/iconset/{{Operation.oIcon}}\"\r\n       alt=\"\" class=\"keyboard-operator-logo curr-operator operator-image\">\r\n  <span class=keyboard-operator-name *ngIf=\"Operation.oArticle\">\r\n        {{setL(Operation.oArticle)}}</span>\r\n</div>\r\n<!--<hr class=under-keyboard-logos>-->\r\n<hr style=\"border: none;height: 1px;background: #f0f0f0;margin: 0;\">\r\n<div class=wrap-pay-data>\r\n  <div *ngFor=\"let field of Operation.oFields\">\r\n    <!--<div>{{opResult.product.pInputField}}</div>-->\r\n    <div class=pay-number>{{field.value|toNumber:'dialog'}}</div>\r\n  </div>\r\n\r\n\r\n  <div class=\"wrap-pay-values clearfix\">\r\n    <div class=owner-score>\r\n      <span class=text>{{'amount_on'|translate}}</span>\r\n      <span class=value>{{onBalance|myCurrency}}</span></div>\r\n    <br>\r\n    <div *ngIf=\"sumCommission>=0\" class=commission>\r\n      <span class=text>{{'commission'|translate}}:</span>\r\n      <span class=value>{{sumCommission|myCurrency}}</span>\r\n      <br>\r\n    </div>\r\n    <div class=from-client>\r\n      <span class=text>{{'from_client'|translate}}</span> <span\r\n      class=value>{{inAmount|myCurrency}}</span></div>\r\n  </div>\r\n  <br>\r\n\r\n  <div *ngIf=\"Operation.oStatus.serial\" style=\"margin-bottom:50px;\">\r\n    <span class=text>{{'serial'|translate}}:</span>\r\n    <div class=pay-number id=\"serial\">\r\n      <span class=value>{{Operation.oStatus.serial}}</span></div>\r\n    <span class=text>{{'secret_code'|translate}}:</span>\r\n    <div class=pay-number id=\"secret\">\r\n      <span class=value> {{Operation.oStatus.secret}}</span>\r\n    </div>\r\n  </div>\r\n\r\n  <div *ngIf=\"Operation.oStatus.error||Operation.oStatus.error==0\">\r\n    <div *ngIf=\"Operation.oStatus.error==0\" class=wrap-status>\r\n      <div class=status>{{'success'|translate}}</div>\r\n      <div class=\"status\">{{Operation.oTimestamp|date:\"d.MM.yy HH:mm:ss\"}}</div>\r\n      <div class=status>id: {{Operation.oId}}</div>\r\n      <div class=status-img><img src=\"assets/images/icons/status-ok.png\" alt=\"\"></div>\r\n      <div class=status>{{Operation.oStatus.error}} - {{setL(Operation.oStatus.errorText)}}</div>\r\n    </div>\r\n\r\n    <div *ngIf=\"Operation.oStatus.error==923\" class=wrap-status>\r\n      <div class=status>{{'in_progress'|translate}}</div>\r\n      <div class=\"status\">{{Operation.oTimestamp|date:\"d.MM.yy HH:mm:ss\"}}</div>\r\n      <div class=status>id: {{Operation.oId}}</div>\r\n      <div class=status-img>\r\n        <img src=\"assets/images/icons/status-wait-inner.png\" alt=\"\">\r\n        <img src=\"assets/images/icons/status-wait-arrow.png\" alt=\"\"></div>\r\n      <div class=status *ngIf=\"Operation.oStatus.errorText.length>0\">\r\n        {{Operation.oStatus.error}} - {{setL(Operation.oStatus.errorText)}}\r\n      </div>\r\n\r\n    </div>\r\n\r\n    <div *ngIf=\"Operation.oStatus.error!=0&&Operation.oStatus.error!=923\" class=wrap-status>\r\n      <div class=status>{{'failed'|translate}}</div>\r\n      <div class=\"status\">{{Operation.oTimestamp|date:\"d.MM.yy HH:mm:ss\"}}</div>\r\n      <div class=status>id: {{Operation.oId}}</div>\r\n      <div class=status-img><img src=\"assets/images/icons/status-error.png\" alt=\"\"></div>\r\n      <div class=status>{{Operation.oStatus.error}} - {{setL(Operation.oStatus.errorText)}}</div>\r\n    </div>\r\n  </div>\r\n\r\n\r\n  <div class=wrap-remark-check *ngIf=\"Operation.oComment!=''\">\r\n    <div class=\"remark check\">{{'comment'|translate}}: {{Operation.oComment}}</div>\r\n    <div class=reseiver-name></div>\r\n  </div>\r\n\r\n  <div\r\n    *ngIf=\"Operation.oType==1&&!Operation.oStatus.serial&&Operation.oStatus.error==0\">\r\n    <button [disabled]=\"loading\" [ngClass]=\"{'disabled':loading}\" id=\"status_button\" class=\"rep_btn\"\r\n            (click)=\"getOpStatus(Operation.oId)\">{{'show'|translate}}\r\n    </button>\r\n  </div>\r\n\r\n  <div *ngIf=\"Operation.oStatus.error==923\" class=\"button-container\">\r\n    <button [disabled]=\"loading\" [ngClass]=\"{'disabled':loading}\" id=\"report_button\" class=\"rep_btn\"\r\n            (click)=\"getOpStatus(Operation.oId)\">{{'update'|translate}}\r\n    </button>\r\n    <img style=\"width: 24px; margin:0 85px;\" *ngIf=\"loading\"\r\n         src=\"data:image/gif;base64,R0lGODlhEAAQAPIAAP///wAAAMLCwkJCQgAAAGJiYoKCgpKSkiH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAEAAQAAADMwi63P4wyklrE2MIOggZnAdOmGYJRbExwroUmcG2LmDEwnHQLVsYOd2mBzkYDAdKa+dIAAAh+QQJCgAAACwAAAAAEAAQAAADNAi63P5OjCEgG4QMu7DmikRxQlFUYDEZIGBMRVsaqHwctXXf7WEYB4Ag1xjihkMZsiUkKhIAIfkECQoAAAAsAAAAABAAEAAAAzYIujIjK8pByJDMlFYvBoVjHA70GU7xSUJhmKtwHPAKzLO9HMaoKwJZ7Rf8AYPDDzKpZBqfvwQAIfkECQoAAAAsAAAAABAAEAAAAzMIumIlK8oyhpHsnFZfhYumCYUhDAQxRIdhHBGqRoKw0R8DYlJd8z0fMDgsGo/IpHI5TAAAIfkECQoAAAAsAAAAABAAEAAAAzIIunInK0rnZBTwGPNMgQwmdsNgXGJUlIWEuR5oWUIpz8pAEAMe6TwfwyYsGo/IpFKSAAAh+QQJCgAAACwAAAAAEAAQAAADMwi6IMKQORfjdOe82p4wGccc4CEuQradylesojEMBgsUc2G7sDX3lQGBMLAJibufbSlKAAAh+QQJCgAAACwAAAAAEAAQAAADMgi63P7wCRHZnFVdmgHu2nFwlWCI3WGc3TSWhUFGxTAUkGCbtgENBMJAEJsxgMLWzpEAACH5BAkKAAAALAAAAAAQABAAAAMyCLrc/jDKSatlQtScKdceCAjDII7HcQ4EMTCpyrCuUBjCYRgHVtqlAiB1YhiCnlsRkAAAOwAAAAAAAAAAAA==\"/>\r\n  </div>\r\n  <div *ngIf=\"Operation.oStatus.error==0\">\r\n    <button\r\n      type=\"button\" class=\"print\" (click)=\"printCheque()\">\r\n      <img src=\"assets/images/icons/print.png\" alt=\"\">\r\n    </button>\r\n  </div>\r\n</div>\r\n<!--</div>-->\r\n<!--</div>-->\r\n"
+module.exports = "<button mat-button [mat-dialog-close]=\"true\"\r\n        style=\"float:right; margin:-10px -10px -25px 0; outline:none; border: 0; background-color: white\">\r\n  <img src=\"assets/images/icons/clean-sum.png\">\r\n</button>\r\n<div class=\"keyboard-logos-wrap clearfix\" id=\"dialog-header\">\r\n  <img src=\"https://globalpay.com.ua/images/iconset/{{Operation.oIcon}}\"\r\n       alt=\"\" class=\"keyboard-operator-logo curr-operator operator-image\">\r\n  <span class=keyboard-operator-name *ngIf=\"Operation.oArticle\">\r\n        {{setL(Operation.oArticle)}}</span>\r\n</div>\r\n<!--<hr class=under-keyboard-logos>-->\r\n<hr style=\"border: none;height: 1px;background: #f0f0f0;margin: 0;\">\r\n<div class=wrap-pay-data>\r\n  <div *ngFor=\"let field of Operation.oFields\">\r\n    <!--<div>{{opResult.product.pInputField}}</div>-->\r\n    <div class=pay-number>{{field.value|toNumber:'dialog'}}</div>\r\n  </div>\r\n\r\n\r\n  <div class=\"wrap-pay-values clearfix\">\r\n    <div class=owner-score>\r\n      <span class=text>{{'amount_on'|translate}}</span>\r\n      <span class=value>{{onBalance|myCurrency}}</span></div>\r\n    <br>\r\n    <div *ngIf=\"sumCommission>=0\" class=commission>\r\n      <span class=text>{{'commission'|translate}}:</span>\r\n      <span class=value>{{sumCommission|myCurrency}}</span>\r\n      <br>\r\n    </div>\r\n    <div class=from-client>\r\n      <span class=text>{{'from_client'|translate}}</span> <span\r\n      class=value>{{inAmount|myCurrency}}</span></div>\r\n  </div>\r\n  <br>\r\n\r\n  <div *ngIf=\"Operation.oStatus.serial\" style=\"margin-bottom:50px;\">\r\n    <span class=text>{{'serial'|translate}}:</span>\r\n    <div class=pay-number id=\"serial\">\r\n      <span class=value>{{Operation.oStatus.serial}}</span></div>\r\n    <span class=text>{{'secret_code'|translate}}:</span>\r\n    <div class=pay-number id=\"secret\">\r\n      <span class=value> {{Operation.oStatus.secret}}</span>\r\n    </div>\r\n  </div>\r\n\r\n  <div *ngIf=\"Operation.oStatus.error||Operation.oStatus.error==0\">\r\n    <div *ngIf=\"Operation.oStatus.error==0\" class=wrap-status>\r\n      <div class=status>{{'success'|translate}}</div>\r\n      <div class=\"status\">{{Operation.oTimestamp|date:\"d.MM.yy HH:mm:ss\"}}</div>\r\n      <div class=status>id: {{Operation.oId}}</div>\r\n      <div class=status-img><img src=\"assets/images/icons/status-ok.png\" alt=\"\"></div>\r\n      <div class=status>{{Operation.oStatus.error}} - {{setL(Operation.oStatus.errorText)}}</div>\r\n    </div>\r\n\r\n    <div *ngIf=\"Operation.oStatus.error==923\" class=wrap-status>\r\n      <div class=status>{{'in_progress'|translate}}</div>\r\n      <div class=\"status\">{{Operation.oTimestamp|date:\"d.MM.yy HH:mm:ss\"}}</div>\r\n      <div class=status>id: {{Operation.oId}}</div>\r\n      <div class=status-img>\r\n        <img src=\"assets/images/icons/status-wait-inner.png\" alt=\"\">\r\n        <img src=\"assets/images/icons/status-wait-arrow.png\" alt=\"\"></div>\r\n      <div class=status *ngIf=\"Operation.oStatus.errorText.length>0\">\r\n        {{Operation.oStatus.error}} - {{setL(Operation.oStatus.errorText)}}\r\n      </div>\r\n\r\n    </div>\r\n\r\n    <div *ngIf=\"Operation.oStatus.error!=0&&Operation.oStatus.error!=923\" class=wrap-status>\r\n      <div class=status>{{'failed'|translate}}</div>\r\n      <div class=\"status\">{{Operation.oTimestamp|date:\"d.MM.yy HH:mm:ss\"}}</div>\r\n      <div class=status>id: {{Operation.oId}}</div>\r\n      <div class=status-img><img src=\"assets/images/icons/status-error.png\" alt=\"\"></div>\r\n      <div class=status>{{Operation.oStatus.error}} - {{setL(Operation.oStatus.errorText)}}</div>\r\n    </div>\r\n  </div>\r\n\r\n\r\n  <div class=wrap-remark-check *ngIf=\"Operation.oComment!=''\">\r\n    <div class=\"remark check\">{{'comment'|translate}}: {{Operation.oComment}}</div>\r\n    <div class=reseiver-name></div>\r\n  </div>\r\n\r\n  <div\r\n    *ngIf=\"Operation.oType==1&&!Operation.oStatus.serial&&Operation.oStatus.error==0\">\r\n    <button [disabled]=\"loading\" [ngClass]=\"{'disabled':loading}\" id=\"status_button\" class=\"rep_btn\"\r\n            (click)=\"getOpStatus(Operation.oId)\">{{'show'|translate}}\r\n    </button>\r\n  </div>\r\n\r\n  <div *ngIf=\"Operation.oStatus.error==923\" class=\"button-container\">\r\n    <button [disabled]=\"loading\" [ngClass]=\"{'disabled':loading}\" id=\"report_button\" class=\"rep_btn\"\r\n            (click)=\"getOpStatus(Operation.oId)\">{{'update'|translate}}\r\n    </button>\r\n    <img style=\"width: 24px; margin:0 85px;\" *ngIf=\"loading\"\r\n         src=\"data:image/gif;base64,R0lGODlhEAAQAPIAAP///wAAAMLCwkJCQgAAAGJiYoKCgpKSkiH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAEAAQAAADMwi63P4wyklrE2MIOggZnAdOmGYJRbExwroUmcG2LmDEwnHQLVsYOd2mBzkYDAdKa+dIAAAh+QQJCgAAACwAAAAAEAAQAAADNAi63P5OjCEgG4QMu7DmikRxQlFUYDEZIGBMRVsaqHwctXXf7WEYB4Ag1xjihkMZsiUkKhIAIfkECQoAAAAsAAAAABAAEAAAAzYIujIjK8pByJDMlFYvBoVjHA70GU7xSUJhmKtwHPAKzLO9HMaoKwJZ7Rf8AYPDDzKpZBqfvwQAIfkECQoAAAAsAAAAABAAEAAAAzMIumIlK8oyhpHsnFZfhYumCYUhDAQxRIdhHBGqRoKw0R8DYlJd8z0fMDgsGo/IpHI5TAAAIfkECQoAAAAsAAAAABAAEAAAAzIIunInK0rnZBTwGPNMgQwmdsNgXGJUlIWEuR5oWUIpz8pAEAMe6TwfwyYsGo/IpFKSAAAh+QQJCgAAACwAAAAAEAAQAAADMwi6IMKQORfjdOe82p4wGccc4CEuQradylesojEMBgsUc2G7sDX3lQGBMLAJibufbSlKAAAh+QQJCgAAACwAAAAAEAAQAAADMgi63P7wCRHZnFVdmgHu2nFwlWCI3WGc3TSWhUFGxTAUkGCbtgENBMJAEJsxgMLWzpEAACH5BAkKAAAALAAAAAAQABAAAAMyCLrc/jDKSatlQtScKdceCAjDII7HcQ4EMTCpyrCuUBjCYRgHVtqlAiB1YhiCnlsRkAAAOwAAAAAAAAAAAA==\"/>\r\n  </div>\r\n  <div *ngIf=\"Operation.oStatus.error==0\">\r\n    <button\r\n      type=\"button\" class=\"print\" (click)=\"printCheque()\">\r\n      <img src=\"assets/images/icons/print.png\" alt=\"\">\r\n    </button>\r\n  </div>\r\n</div>\r\n<!--</div>-->\r\n<!--</div>-->\r\n"
 
 /***/ }),
 
@@ -6322,7 +6412,7 @@ var __param = (this && this.__param) || function (paramIndex, decorator) {
 
 
 
-var OperationReportComponent = (function () {
+var OperationReportComponent = /** @class */ (function () {
     function OperationReportComponent(report, alert, dialog) {
         this.report = report;
         this.alert = alert;
@@ -6425,7 +6515,7 @@ var OperationReportComponent = (function () {
     return OperationReportComponent;
 }());
 
-var MyDialog = (function () {
+var MyDialog = /** @class */ (function () {
     function MyDialog(opService, dialogRef, prodServ, data) {
         this.opService = opService;
         this.dialogRef = dialogRef;
@@ -6591,7 +6681,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var ReportsComponent = (function () {
+var ReportsComponent = /** @class */ (function () {
     function ReportsComponent(global, report) {
         this.global = global;
         this.report = report;
@@ -6848,7 +6938,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
-var StatusComponent = (function () {
+var StatusComponent = /** @class */ (function () {
     function StatusComponent(route) {
         var _this = this;
         this.route = route;
@@ -6919,7 +7009,7 @@ var __param = (this && this.__param) || function (paramIndex, decorator) {
 
 
 
-var ArticleApi = (function () {
+var ArticleApi = /** @class */ (function () {
     function ArticleApi(http, basePath, configuration) {
         this.http = http;
         this.defaultHeaders = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Headers */]();
@@ -7176,7 +7266,7 @@ var __param = (this && this.__param) || function (paramIndex, decorator) {
 
 
 
-var AuthApi = (function () {
+var AuthApi = /** @class */ (function () {
     function AuthApi(http, basePath, configuration) {
         this.http = http;
         this.defaultHeaders = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Headers */]();
@@ -7491,7 +7581,7 @@ var __param = (this && this.__param) || function (paramIndex, decorator) {
 
 
 
-var OperationApi = (function () {
+var OperationApi = /** @class */ (function () {
     function OperationApi(http, basePath, configuration) {
         this.http = http;
         this.defaultHeaders = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Headers */]();
@@ -7982,7 +8072,7 @@ var __param = (this && this.__param) || function (paramIndex, decorator) {
 
 
 
-var ReportApi = (function () {
+var ReportApi = /** @class */ (function () {
     function ReportApi(http, basePath, configuration) {
         this.http = http;
         this.defaultHeaders = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Headers */]();
@@ -8593,7 +8683,7 @@ var __param = (this && this.__param) || function (paramIndex, decorator) {
 
 
 
-var UserApi = (function () {
+var UserApi = /** @class */ (function () {
     function UserApi(http, basePath, configuration) {
         this.http = http;
         this.defaultHeaders = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Headers */]();
@@ -9073,7 +9163,7 @@ var UserApi = (function () {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Configuration; });
-var Configuration = (function () {
+var Configuration = /** @class */ (function () {
     function Configuration() {
     }
     return Configuration;
@@ -9107,7 +9197,7 @@ var COLLECTION_FORMATS = {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Lang; });
-var Lang = (function () {
+var Lang = /** @class */ (function () {
     function Lang() {
     }
     Lang.getLangValue = function (names) {
@@ -9405,7 +9495,7 @@ var __param = (this && this.__param) || function (paramIndex, decorator) {
 };
 
  // our translate service
-var TranslatePipe = (function () {
+var TranslatePipe = /** @class */ (function () {
     function TranslatePipe(_translations) {
         this._translations = _translations;
         this.currentLang = localStorage.lang;
