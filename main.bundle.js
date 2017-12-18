@@ -42,7 +42,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
-var AlertComponent = /** @class */ (function () {
+var AlertComponent = (function () {
     function AlertComponent(alertService) {
         this.alertService = alertService;
     }
@@ -85,7 +85,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
-var AuthGuard = /** @class */ (function () {
+var AuthGuard = (function () {
     function AuthGuard(router) {
         this.router = router;
     }
@@ -739,7 +739,7 @@ var fakeBackendProvider = {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Balance; });
-var Balance = /** @class */ (function () {
+var Balance = (function () {
     function Balance(bPersonal, bNetwork, bOverdraft, bDateTime) {
         this.bPersonal = bPersonal;
         this.bNetwork = bNetwork;
@@ -758,7 +758,7 @@ var Balance = /** @class */ (function () {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Category; });
-var Category = /** @class */ (function () {
+var Category = (function () {
     function Category(id, name, order) {
         this.cId = id;
         this.cName = name;
@@ -776,7 +776,7 @@ var Category = /** @class */ (function () {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Cheque; });
-var Cheque = /** @class */ (function () {
+var Cheque = (function () {
     function Cheque(cName, cText) {
         this.cName = cName;
         this.cText = cText;
@@ -793,7 +793,7 @@ var Cheque = /** @class */ (function () {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CollectionExtended; });
-var CollectionExtended = /** @class */ (function () {
+var CollectionExtended = (function () {
     function CollectionExtended(id, tradePoint, pointAddr, date, nominal, commission, quantity, summary, incomeTariff, collectorGet, saleRecord) {
         this.id = id;
         this.tradePoint = tradePoint;
@@ -841,7 +841,7 @@ var CollectionExtended = /** @class */ (function () {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Collection; });
-var Collection = /** @class */ (function () {
+var Collection = (function () {
     function Collection(opId, id, tradePoint, date, nominal, commission, sum, quantity, incomeTariff, collectorGet, firstOperation, lastOperation) {
         this.opId = opId;
         this.id = id;
@@ -880,7 +880,7 @@ var Collection = /** @class */ (function () {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Commission; });
-var Commission = /** @class */ (function () {
+var Commission = (function () {
     function Commission(min, percent, val) {
         this.cMin_amount = min;
         this.cPercent = percent;
@@ -898,7 +898,7 @@ var Commission = /** @class */ (function () {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Field; });
-var Field = /** @class */ (function () {
+var Field = (function () {
     function Field(fId, fName, fHint, fMask, fRegexp, fOrder) {
         this.fId = fId || 0;
         this.fName = fName || [];
@@ -941,7 +941,7 @@ var Field = /** @class */ (function () {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return News; });
-var News = /** @class */ (function () {
+var News = (function () {
     function News(nId, nOrder, nTitle, nBody, nFooter) {
         this.nId = nId;
         this.nOrder = nOrder;
@@ -961,7 +961,7 @@ var News = /** @class */ (function () {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Operation; });
-var Operation = /** @class */ (function () {
+var Operation = (function () {
     // --------------------
     function Operation(oId, oArticle, oType, oTimestamp, oFields, oAmount, oCommission, oComment, oStatus, oCheque, oIcon) {
         this.oId = oId;
@@ -988,7 +988,7 @@ var Operation = /** @class */ (function () {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Product; });
-var Product = /** @class */ (function () {
+var Product = (function () {
     function Product(pId, pType, pName, pHint, pInputFields, pCommissions, pNominal, pCheque, pProvCodes, pAmountMin, pAmountMax, pIcon, pOrder) {
         this.pId = pId;
         this.pType = pType;
@@ -1028,7 +1028,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 var PADDING = '000000';
-var MyCurrencyPipe = /** @class */ (function () {
+var MyCurrencyPipe = (function () {
     function MyCurrencyPipe() {
         // TODO comes from configuration settings
         this.DECIMAL_SEPARATOR = '.';
@@ -1086,7 +1086,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
-var SafeHtmlPipe = /** @class */ (function () {
+var SafeHtmlPipe = (function () {
     function SafeHtmlPipe(sanitized) {
         this.sanitized = sanitized;
     }
@@ -1117,7 +1117,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 
-var ToNumberPipe = /** @class */ (function () {
+var ToNumberPipe = (function () {
     function ToNumberPipe() {
     }
     ToNumberPipe.prototype.transform = function (value, args) {
@@ -1157,7 +1157,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 
-var ToRegexPipe = /** @class */ (function () {
+var ToRegexPipe = (function () {
     function ToRegexPipe() {
     }
     ToRegexPipe.prototype.transform = function (value) {
@@ -1216,7 +1216,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var AlertService = /** @class */ (function () {
+var AlertService = (function () {
     function AlertService(router, auth, dialog) {
         var _this = this;
         this.router = router;
@@ -1345,7 +1345,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var AuthenticationService = /** @class */ (function () {
+var AuthenticationService = (function () {
     function AuthenticationService(service, user) {
         this.service = service;
         this.user = user;
@@ -1410,7 +1410,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var CategoryService = /** @class */ (function () {
+var CategoryService = (function () {
     function CategoryService(service, global) {
         this.service = service;
         this.global = global;
@@ -1481,7 +1481,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
-var GlobalService = /** @class */ (function () {
+var GlobalService = (function () {
     function GlobalService() {
         this.activity = 0;
         this.currOnline = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["EventEmitter"]();
@@ -1640,7 +1640,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var NewsService = /** @class */ (function () {
+var NewsService = (function () {
     function NewsService(service) {
         this.service = service;
         this.NEWS = [];
@@ -1732,7 +1732,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var OperationService = /** @class */ (function () {
+var OperationService = (function () {
     function OperationService(service, global, user) {
         this.service = service;
         this.global = global;
@@ -2258,7 +2258,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var ProductService = /** @class */ (function () {
+var ProductService = (function () {
     function ProductService(service, userServ, alert, opService, catService, global) {
         this.service = service;
         this.userServ = userServ;
@@ -2501,7 +2501,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var ReportsService = /** @class */ (function () {
+var ReportsService = (function () {
     function ReportsService(service, alert, operation, user) {
         this.service = service;
         this.alert = alert;
@@ -2666,7 +2666,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var UserService = /** @class */ (function () {
+var UserService = (function () {
     function UserService(service, alert) {
         this.service = service;
         this.alert = alert;
@@ -2775,7 +2775,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
-var AppComponent = /** @class */ (function () {
+var AppComponent = (function () {
     function AppComponent(config) {
         this.config = config;
     }
@@ -2938,7 +2938,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var AppModule = /** @class */ (function () {
+var AppModule = (function () {
     function AppModule() {
     }
     AppModule = __decorate([
@@ -3132,7 +3132,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var CategoriesComponent = /** @class */ (function () {
+var CategoriesComponent = (function () {
     function CategoriesComponent(catService, prodService, newsServ, global, alert) {
         var _this = this;
         this.catService = catService;
@@ -3267,7 +3267,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
-var CenterComponent = /** @class */ (function () {
+var CenterComponent = (function () {
     function CenterComponent(service) {
         var _this = this;
         this.service = service;
@@ -3342,7 +3342,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
-var ChangePassComponent = /** @class */ (function () {
+var ChangePassComponent = (function () {
     function ChangePassComponent(auth) {
         this.auth = auth;
         this.loading = false;
@@ -3447,7 +3447,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var CheckBeginComponent = /** @class */ (function () {
+var CheckBeginComponent = (function () {
     // transInfo = this.service.OPERATION;
     function CheckBeginComponent(service, prodService) {
         this.service = service;
@@ -3578,7 +3578,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var CheckProcessComponent = /** @class */ (function () {
+var CheckProcessComponent = (function () {
     function CheckProcessComponent(service, prodServ, alert) {
         var _this = this;
         this.service = service;
@@ -3780,7 +3780,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var FastAccessComponent = /** @class */ (function () {
+var FastAccessComponent = (function () {
     function FastAccessComponent(service, products) {
         var _this = this;
         this.service = service;
@@ -3887,7 +3887,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var HeaderComponent = /** @class */ (function () {
+var HeaderComponent = (function () {
     function HeaderComponent(service, auth, catService, prodService, opService, cdr) {
         var _this = this;
         this.service = service;
@@ -4019,7 +4019,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var HelpComponent = /** @class */ (function () {
+var HelpComponent = (function () {
     function HelpComponent(user, alert) {
         this.user = user;
         this.alert = alert;
@@ -4125,7 +4125,7 @@ var __param = (this && this.__param) || function (paramIndex, decorator) {
 
 
 
-var HomeComponent = /** @class */ (function () {
+var HomeComponent = (function () {
     function HomeComponent(configuration, global, alert, auth, user, dialog, prodServ, cdr) {
         var _this = this;
         this.configuration = configuration;
@@ -4218,7 +4218,7 @@ var HomeComponent = /** @class */ (function () {
     return HomeComponent;
 }());
 
-var GlobalDialog = /** @class */ (function () {
+var GlobalDialog = (function () {
     function GlobalDialog(dialogRef, cdr, data) {
         this.dialogRef = dialogRef;
         this.cdr = cdr;
@@ -4285,7 +4285,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/input-form/input-form.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<form name=\"form\" #F=\"ngForm\" (ngSubmit)=\"F.form.valid\" novalidate>\r\n  <div class=up-keyboard style=\"min-height: 50px\">\r\n    <div class=inputs-wrap>\r\n      <div *ngIf=\"product.pId==0\"\r\n           style=\"margin: 15px 0 40px\"\r\n           class=\"input-wrap-icon show\">\r\n        <input class=\"number input-field\" name=number id=\"findNumber\"\r\n               [readonly]=\"mobileView\"\r\n               [textMask]=\"{mask: mask}\"\r\n               [(ngModel)]=\"findNumber\"\r\n               placeholder=\"(___) ___-__-__\"\r\n               (focus)=\"setActiveInput(1)\"\r\n               (ngModelChange)=\"searchByNumber(findNumber)\"/>\r\n        <span class=bkspace-input (click)=\"findNumber=clear(findNumber)\"><svg class=svg-menu-icon><use\r\n          xlink:href=#backspace></use></svg></span>\r\n      </div>\r\n\r\n\r\n      <div class=\"input-wrap-icon show\" style=\"margin: -10px 0 -30px 0; z-index: 10\">\r\n        <mat-form-field\r\n          *ngFor=\"let f of fields|reverse; let i = index;\"\r\n          style=\"width: 100%; height:80px; z-index: 2; padding-bottom: 10px\">\r\n\r\n          <input *ngIf=\"f.field.fRegexp!='.'\" matInput required\r\n                 [readonly]=\"mobileView\"\r\n                 placeholder=\"{{setL(f.field.fName)}}\"\r\n                 class=\"number input-field\" style=\"border: 0; margin-bottom: -5px;\"\r\n                 name=\"input-field{{f.field.fOrder}}\" id=\"field{{f.field.fOrder}}\"\r\n                 [textMask]=\"{mask: (f.field.fMask|toRegex), guide:true}\"\r\n                 value=\"{{f.field.fMask}}\"\r\n                 pattern=\"{{f.field.fRegexp }}\"\r\n                 #number=\"ngModel\"\r\n                 [(ngModel)]=\"f.value\"\r\n                 (focus)=\"setActiveInput(2,f.field.fOrder)\"\r\n                 (ngModelChange)=\"f.value=clearModel(f.value);\"\r\n                 (keyup.enter)=\"onEnterAction()\"\r\n                 onkeypress='return event.charCode !=32'\r\n                 title=\"{{setL(f.field.fHint)}}\"/>\r\n\r\n          <input *ngIf=\"f.field.fRegexp=='.'\" matInput required\r\n                 [readonly]=\"mobileView\"\r\n                 placeholder=\"{{setL(f.field.fName)}}\"\r\n                 class=\"number input-field\" style=\"border: 0; margin-bottom: -5px;\"\r\n                 name=\"input-field{{f.field.fOrder}}\"\r\n                 id=\"field{{f.field.fOrder}}-nomask\"\r\n                 pattern=\".*\"\r\n                 #number=\"ngModel\"\r\n                 [(ngModel)]=\"f.value\"\r\n                 (ngModelChange)=\"f.value=clearModel(f.value);setMasked(f.value)\"\r\n                 (focus)=\"setActiveInput(2,f.field.fOrder)\"\r\n                 (keyup.enter)=\"onEnterAction(f)\"\r\n                 onkeypress='return event.charCode !=32'\r\n                 title=\"{{setL(f.field.fHint)}}\"/>\r\n\r\n          <span class=bkspace-input\r\n                (click)=\"f.value=clear(f.value); setMasked();\">\r\n        <svg class=svg-menu-icon><use xlink:href=#backspace></use></svg></span>\r\n        </mat-form-field>\r\n      </div>\r\n      <!--========================================================-->\r\n      <div *ngIf=\"product.pId!=0\" class=\"under-main_field clearfix\" style=\"padding-top: 20px\">\r\n        <div *ngIf=\"product.pType==1\" class=\"\" style=\"font-size: 17px\">\r\n          {{'voucher'|translate}} <br>\r\n          <span\r\n            style=\"font-weight: 600; font-size: 17px\">{{setL(product.pName)}}<br></span>\r\n          {{'nominal'|translate}}: <span\r\n          style=\"font-weight: bold; font-size: 20px\">{{(product.pNominal/100)}}</span><br>\r\n\r\n          {{'voucher_hint'|translate}}\r\n        </div>\r\n        <br>\r\n        <div class=wrap-sum id=\"wrap-sum\" *ngIf=\"product.pType==2\">\r\n          <mat-form-field style=\"width: 95px; height: 60px;\">\r\n            <input name=\"amount\" id=\"amount\"\r\n                   maxlength=\"5\"\r\n                   [readonly]=\"mobileView\"\r\n                   currencyMask\r\n                   [options]=\"{ prefix: '', suffix:'', thousands: ' ', align:'right', precision:'0'}\"\r\n                   pattern=\"^[0-9]{1,5}\"\r\n                   class=\"sum form-control numeric\"\r\n                   style=\"border: 0; text-align: right\"\r\n                   matInput required\r\n                   [(ngModel)]=\"amount\"\r\n                   (ngModelChange)=\"amount=validateSum()\"\r\n                   [placeholder]=\"'amount'|translate\"\r\n                   (focus)=\"setActiveInput(3)\"\r\n                   (blur)=\"onBlur()\"\r\n                   (keyup.enter)=\"onEnterAction()\"\r\n                   (keydown)=\"keyboardInputSum($event)\"\r\n                   value=\"{{amount}}\"\r\n                   type=\"text\" dir=\"ltr\">\r\n          </mat-form-field>\r\n          <span class=\"point\">.</span>\r\n          <mat-form-field style=\"width: 60px; padding-left: 0;\">\r\n            <input id=\"coins\" name=\"coins\"\r\n                   maxlength=\"2\"\r\n                   [readonly]=\"mobileView\"\r\n                   pattern=\"[0-9]{1,2}\"\r\n                   onkeypress='return event.charCode >= 48 && event.charCode <= 57'\r\n                   (keydown)=\"insertCoins($event)\"\r\n                   (ngModelChange)=\"validateSum()\"\r\n                   class=\"sum numeric\"\r\n                   style=\"border: 0; width: 50px; padding: 0 8px\"\r\n                   matInput [(ngModel)]=\"coins\"\r\n                   (change)=\"clearCoins()\"\r\n                   (keyup.enter)=\"onEnterAction()\"\r\n                   (blur)=\"onBlur()\"\r\n                   (focus)=\"setActiveInput(3,1)\" dir=\"ltr\">\r\n          </mat-form-field>\r\n          <span class=clear-sum (click)=\"clearSum()\"></span>\r\n        </div>\r\n        <br>\r\n        <button *ngIf=\"false\" type=button\r\n                class=contact-list_btn>\r\n          <svg class=svg-contact-list>\r\n            <use xlink:href=#contact-list></use>\r\n          </svg>\r\n        </button>\r\n      </div>\r\n      <div *ngIf=\"invalid.min\" style=\"color:red; margin-top:20px\">Сумма <\r\n        {{product.pAmountMin/100}}\r\n      </div>\r\n      <div *ngIf=\"invalid.max\" style=\"color:red; margin-top: 20px\">Сумма >\r\n        {{product.pAmountMax/100}}\r\n      </div>\r\n      <div *ngIf=\"invalid.commission\" style=\"color:red; margin-top: 20px\">\r\n        {{'high_commission'|translate}}<br>\r\n        {{'on_balance'|translate}}: {{onBalance}}\r\n      </div>\r\n      <div *ngIf=\"product.pId!=0\" style=\"display: inline-block; width: 100%;\">\r\n        <button *ngIf=\"product.pId!=0\" type=button class=remark (click)=\"showComment()\">{{'comment'|translate}}</button>\r\n\r\n        <input (click)=\"setActiveInput(4)\" (focus)=\"setActiveInput(4)\" [formControl]=\"comment\" [readonly]=\"mobileView\"\r\n               class=\"remark-text form-control\"\r\n               id=remark-text>\r\n      </div>\r\n    </div>\r\n\r\n\r\n    <div *ngIf=\"product.pId!=0\" style=\"margin-top: 5px; height: 50px;\">\r\n      <button\r\n        [disabled]=\"F.form.invalid||(product.pType==2&&amount=='0'&&coins=='00')||invalid.min||invalid.max||invalid.commission\"\r\n        [ngClass]=\"{'disabled':(product.pType==2&&(F.form.invalid||(coins=='00'&&amount=='0')))||invalid.min||invalid.max||invalid.commission}\"\r\n        type=\"submit\"\r\n        id=\"operation-next\"\r\n        class=\"waves-effect waves-light btn next onkeyboard \"\r\n        (click)=\"pressup()\"\r\n        (keydown.enter)=\"pressup()\"\r\n        (mousedown)=\"mousedown($event)\"\r\n        (mouseup)=\"mouseup($event)\"\r\n        (mouseleave)=\"mouseup($event)\"\r\n        (press)=\"longPress()\"\r\n        (pressup)=\"pressup()\"\r\n        (pan)=\"pressup()\">\r\n        <span id=\"execute\" class=next-onkeyboard-inner>{{'execute'|translate}}</span>\r\n        {{'next'|translate}}\r\n        <span class=next-onkeyboard-overfl></span>\r\n      </button>\r\n    </div>\r\n    <!--<div id=\"wrong-data\" style=\"color: red;\" class=\"hide\">Change summ! Commission is bigger than amount</div>-->\r\n    <!--TODO!-->\r\n\r\n\r\n  </div>\r\n</form>\r\n<!--<app-keyboard (onBtnClick)=\"keyboardPress($event)\"></app-keyboard>-->\r\n\r\n<div [ngSwitch]=\"currKeyboard\" id=\"keyboard\" style=\"padding-top: 0px\">\r\n  <div *ngSwitchCase=\"1\" class=\"keyboard-wrap numbers clearfix\">\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton(1)\">1</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton(2)\">2</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton(3)\">3</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton(4)\">4</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton(5)\">5</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton(6)\">6</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton(7)\">7</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton(8)\">8</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton(9)\">9</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button id=\"but0\" type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton(0)\">0</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('.')\">.</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner letters\" (click)=\"changeKeyboard(2)\">абв\r\n      </button>\r\n    </div>\r\n    <div class=\"help-modal help-modal-small modal-keyboard\">\r\n      <div class=arrow-dialog>{{'keyboard_help'|translate}}</div>\r\n    </div>\r\n  </div>\r\n  <div *ngSwitchCase=\"2\" class=\"keyboard-wrap letters ru clearfix\">\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('й')\">й</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('ц')\">ц</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('у')\">у</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('к')\">к</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('е')\">е</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('н')\">н</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('г')\">г</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('ш')\">ш</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('щ')\">щ</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('з')\">з</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('х')\">х</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('ф')\">ф</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('ы')\">ы</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('в')\">в</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('а')\">а</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('п')\">п</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('р')\">р</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('о')\">о</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('л')\">л</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('д')\">д</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('ж')\">ж</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('э')\">э</button>\r\n    </div>\r\n    <div class=\"key-wrap upper\">\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"changeToUpper()\">\r\n        <svg class=svg-keyboard-icon>\r\n          <use href=#uppercase></use>\r\n        </svg>\r\n      </button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('я')\">я</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('ч')\">ч</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('с')\">с</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('м')\">м</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('и')\">и</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('т')\">т</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('ь')\">ь</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('б')\">б</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('ю')\">ю</button>\r\n    </div>\r\n    <div class=\"key-wrap bkspace\">\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"removeSymbol()\">\r\n        <svg class=svg-keyboard-icon>\r\n          <use href=#backspace></use>\r\n        </svg>\r\n      </button>\r\n    </div>\r\n    <div class=\"key-wrap switch-numbers\">\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"changeKeyboard(1)\">123</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('@')\">@</button>\r\n    </div>\r\n    <div class=\"key-wrap switch-en\">\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"changeKeyboard(3)\">en</button>\r\n    </div>\r\n    <div class=\"key-wrap space\">\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('space')\">Русский</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('.')\">.</button>\r\n    </div>\r\n    <div class=\"key-wrap switch-symbols\">\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"changeKeyboard(4)\">>.!</button>\r\n    </div>\r\n  </div>\r\n  <div *ngSwitchCase=\"3\" class=\"keyboard-wrap letters en clearfix\">\r\n    <div class=clearfix>\r\n      <div class=key-wrap>\r\n        <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('q')\">q</button>\r\n      </div>\r\n      <div class=key-wrap>\r\n        <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('w')\">w</button>\r\n      </div>\r\n      <div class=key-wrap>\r\n        <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('e')\">e</button>\r\n      </div>\r\n      <div class=key-wrap>\r\n        <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('r')\">r</button>\r\n      </div>\r\n      <div class=key-wrap>\r\n        <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('t')\">t</button>\r\n      </div>\r\n      <div class=key-wrap>\r\n        <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('y')\">y</button>\r\n      </div>\r\n      <div class=key-wrap>\r\n        <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('u')\">u</button>\r\n      </div>\r\n      <div class=key-wrap>\r\n        <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('i')\">i</button>\r\n      </div>\r\n      <div class=key-wrap>\r\n        <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('o')\">o</button>\r\n      </div>\r\n      <div class=key-wrap>\r\n        <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('p')\">p</button>\r\n      </div>\r\n    </div>\r\n    <div class=clearfix>\r\n      <div class=\"key-wrap leftspace-mibble\">\r\n        <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('a')\">a</button>\r\n      </div>\r\n      <div class=key-wrap>\r\n        <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('s')\">s</button>\r\n      </div>\r\n      <div class=key-wrap>\r\n        <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('d')\">d</button>\r\n      </div>\r\n      <div class=key-wrap>\r\n        <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('f')\">f</button>\r\n      </div>\r\n      <div class=key-wrap>\r\n        <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('g')\">g</button>\r\n      </div>\r\n      <div class=key-wrap>\r\n        <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('h')\">h</button>\r\n      </div>\r\n      <div class=key-wrap>\r\n        <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('j')\">j</button>\r\n      </div>\r\n      <div class=key-wrap>\r\n        <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('k')\">k</button>\r\n      </div>\r\n      <div class=key-wrap>\r\n        <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('l')\">l</button>\r\n      </div>\r\n    </div>\r\n    <div class=clearfix>\r\n      <div class=\"key-wrap upper\">\r\n        <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"changeToUpper()\">\r\n          <svg class=svg-keyboard-icon>\r\n            <use href=#uppercase></use>\r\n          </svg>\r\n        </button>\r\n      </div>\r\n      <div class=key-wrap>\r\n        <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('z')\">z</button>\r\n      </div>\r\n      <div class=key-wrap>\r\n        <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('x')\">x</button>\r\n      </div>\r\n      <div class=key-wrap>\r\n        <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('c')\">c</button>\r\n      </div>\r\n      <div class=key-wrap>\r\n        <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('v')\">v</button>\r\n      </div>\r\n      <div class=key-wrap>\r\n        <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('b')\">b</button>\r\n      </div>\r\n      <div class=key-wrap>\r\n        <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('n')\">n</button>\r\n      </div>\r\n      <div class=key-wrap>\r\n        <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('m')\">m</button>\r\n      </div>\r\n      <div class=\"key-wrap bkspace\">\r\n        <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"removeSymbol()\">\r\n          <svg class=svg-keyboard-icon>\r\n            <use href=#backspace></use>\r\n          </svg>\r\n        </button>\r\n      </div>\r\n    </div>\r\n    <div class=\"bottom-letters clearfix\">\r\n      <div class=\"key-wrap switch-numbers\">\r\n        <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"changeKeyboard(1)\">123</button>\r\n      </div>\r\n      <div class=key-wrap>\r\n        <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('@')\">@</button>\r\n      </div>\r\n      <div class=\"key-wrap switch-ru\">\r\n        <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"changeKeyboard(2)\">ru</button>\r\n      </div>\r\n      <div class=\"key-wrap space\">\r\n        <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('space')\">English\r\n        </button>\r\n      </div>\r\n      <div class=key-wrap>\r\n        <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('.')\">.</button>\r\n      </div>\r\n      <div class=\"key-wrap switch-symbols\">\r\n        <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"changeKeyboard(4)\">>.!</button>\r\n      </div>\r\n    </div>\r\n  </div>\r\n  <div *ngSwitchCase=\"4\" class=\"keyboard-wrap symbols clearfix\">\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('!')\">!</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('@')\">@</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('#')\">#</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('$')\">$</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('%')\">%</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('^')\">^</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('&')\">&</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('*')\">*</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('(')\">(</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton(')')\">)</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('-')\">-</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('+')\">+</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('№')\">№</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton(';')\">;</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('?')\">?</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('_')\">_</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('=')\">=</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('{')\">{{ \"{\" }}</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('}')\">}</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('[')\">[</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton(']')\">]</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('\\\\')\">\\</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('&lt;')\">&lt;</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('&gt;')\">&gt;</button>\r\n    </div>\r\n    <div class=\"key-wrap letters\">\r\n      <button type=button class=\"waves-effect waves-light btn key-inner letters\" (click)=\"changeKeyboard(2)\">абв\r\n      </button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton(',')\">,</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('.')\">.</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('/')\">/</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('&quot;')\">\"</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('\\'')\">'</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('|')\">|</button>\r\n    </div>\r\n    <div class=\"key-wrap bkspace\">\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"removeSymbol()\">\r\n        <svg class=svg-keyboard-icon>\r\n          <use href=#backspace></use>\r\n        </svg>\r\n      </button>\r\n    </div>\r\n  </div>\r\n</div>\r\n"
+module.exports = "<form name=\"form\" #F=\"ngForm\" (ngSubmit)=\"F.form.valid\" novalidate>\r\n  <div class=up-keyboard style=\"min-height: 50px\">\r\n    <div class=inputs-wrap>\r\n      <div *ngIf=\"product.pId==0\"\r\n           style=\"margin: 15px 0 40px\"\r\n           class=\"input-wrap-icon show\">\r\n        <input class=\"number input-field\" name=number id=\"findNumber\"\r\n               [readonly]=\"mobileView\"\r\n               [textMask]=\"{mask: mask}\"\r\n               [(ngModel)]=\"findNumber\"\r\n               placeholder=\"(___) ___-__-__\"\r\n               (focus)=\"setActiveInput(1)\"\r\n               (ngModelChange)=\"searchByNumber(findNumber)\"/>\r\n        <span class=bkspace-input (click)=\"findNumber=clear(findNumber)\"><svg class=svg-menu-icon><use\r\n          xlink:href=#backspace></use></svg></span>\r\n      </div>\r\n\r\n\r\n      <div class=\"input-wrap-icon show\" style=\"margin: -10px 0 -30px 0; z-index: 10\">\r\n        <mat-form-field\r\n          *ngFor=\"let f of fields|reverse; let i = index;\"\r\n          style=\"width: 100%; height:80px; z-index: 2; padding-bottom: 10px\">\r\n\r\n          <input *ngIf=\"f.field.fRegexp!='.'\" matInput required\r\n                 [readonly]=\"mobileView\"\r\n                 placeholder=\"{{setL(f.field.fName)}}\"\r\n                 class=\"number input-field\" style=\"border: 0; margin-bottom: -5px;\"\r\n                 name=\"input-field{{f.field.fOrder}}\" id=\"field{{f.field.fOrder}}\"\r\n                 [textMask]=\"{mask: (f.field.fMask|toRegex), guide:true}\"\r\n                 value=\"{{f.field.fMask}}\"\r\n                 pattern=\"{{f.field.fRegexp }}\"\r\n                 #number=\"ngModel\"\r\n                 [(ngModel)]=\"f.value\"\r\n                 (focus)=\"setActiveInput(2,f.field.fOrder)\"\r\n                 (ngModelChange)=\"f.value=clearModel(f.value);\"\r\n                 (keyup.enter)=\"onEnterAction()\"\r\n                 onkeypress='return event.charCode !=32'\r\n                 title=\"{{setL(f.field.fHint)}}\"/>\r\n\r\n          <input *ngIf=\"f.field.fRegexp=='.'\" matInput required\r\n                 [readonly]=\"mobileView\"\r\n                 placeholder=\"{{setL(f.field.fName)}}\"\r\n                 class=\"number input-field\" style=\"border: 0; margin-bottom: -5px;\"\r\n                 name=\"input-field{{f.field.fOrder}}\"\r\n                 id=\"field{{f.field.fOrder}}-nomask\"\r\n                 pattern=\".*\"\r\n                 #number=\"ngModel\"\r\n                 [(ngModel)]=\"f.value\"\r\n                 (ngModelChange)=\"f.value=clearModel(f.value);setMasked(f.value)\"\r\n                 (focus)=\"setActiveInput(2,f.field.fOrder)\"\r\n                 (keyup.enter)=\"onEnterAction(f)\"\r\n                 onkeypress='return event.charCode !=32'\r\n                 title=\"{{setL(f.field.fHint)}}\"/>\r\n\r\n          <span class=bkspace-input\r\n                (click)=\"f.value=clear(f.value); setMasked();\">\r\n        <svg class=svg-menu-icon><use xlink:href=#backspace></use></svg></span>\r\n        </mat-form-field>\r\n      </div>\r\n      <!--========================================================-->\r\n      <div *ngIf=\"product.pId!=0\" class=\"under-main_field clearfix\" style=\"padding-top: 20px\">\r\n        <div *ngIf=\"product.pType==1\" class=\"\" style=\"font-size: 17px\">\r\n          {{'voucher'|translate}} <br>\r\n          <span\r\n            style=\"font-weight: 600; font-size: 17px\">{{setL(product.pName)}}<br></span>\r\n          {{'nominal'|translate}}: <span\r\n          style=\"font-weight: bold; font-size: 20px\">{{(product.pNominal/100)}}</span><br>\r\n\r\n          {{'voucher_hint'|translate}}\r\n        </div>\r\n        <br>\r\n        <div class=wrap-sum id=\"wrap-sum\" *ngIf=\"product.pType==2\">\r\n          <mat-form-field style=\"width: 95px; height: 60px;\">\r\n            <input name=\"amount\" id=\"amount\"\r\n                   maxlength=\"5\"\r\n                   [readonly]=\"mobileView\"\r\n                   currencyMask\r\n                   [options]=\"{ prefix: '', suffix:'', thousands: ' ', align:'right', precision:'0'}\"\r\n                   pattern=\"^[0-9]{1,5}\"\r\n                   class=\"sum form-control numeric\"\r\n                   style=\"border: 0; text-align: right\"\r\n                   matInput required\r\n                   [(ngModel)]=\"amount\"\r\n                   (ngModelChange)=\"amount=validateSum()\"\r\n                   [placeholder]=\"'amount'|translate\"\r\n                   (focus)=\"setActiveInput(3)\"\r\n                   (blur)=\"onBlur()\"\r\n                   (keyup.enter)=\"onEnterAction()\"\r\n                   (keydown)=\"keyboardInputSum($event)\"\r\n                   value=\"{{amount}}\"\r\n                   type=\"text\" dir=\"ltr\">\r\n          </mat-form-field>\r\n          <span class=\"point\">.</span>\r\n          <mat-form-field style=\"width: 60px; padding-left: 0;\">\r\n            <input id=\"coins\" name=\"coins\"\r\n                   maxlength=\"2\"\r\n                   [readonly]=\"mobileView\"\r\n                   pattern=\"[0-9]{1,2}\"\r\n                   onkeypress='return event.charCode >= 48 && event.charCode <= 57'\r\n                   (keydown)=\"insertCoins($event)\"\r\n                   (ngModelChange)=\"validateSum()\"\r\n                   class=\"sum numeric\"\r\n                   style=\"border: 0; width: 50px; padding: 0 8px\"\r\n                   matInput [(ngModel)]=\"coins\"\r\n                   (change)=\"clearCoins()\"\r\n                   (keyup.enter)=\"onEnterAction()\"\r\n                   (blur)=\"onBlur()\"\r\n                   (focus)=\"setActiveInput(3,1)\" dir=\"ltr\">\r\n          </mat-form-field>\r\n          <span class=clear-sum (click)=\"clearSum()\"></span>\r\n        </div>\r\n        <br>\r\n        <button *ngIf=\"false\" type=button\r\n                class=contact-list_btn>\r\n          <svg class=svg-contact-list>\r\n            <use xlink:href=#contact-list></use>\r\n          </svg>\r\n        </button>\r\n      </div>\r\n      <div *ngIf=\"invalid.min\" style=\"color:red; margin-top:20px\">Сумма <\r\n        {{product.pAmountMin/100}}\r\n      </div>\r\n      <div *ngIf=\"invalid.max\" style=\"color:red; margin-top: 20px\">Сумма >\r\n        {{product.pAmountMax/100}}\r\n      </div>\r\n      <div *ngIf=\"invalid.commission\" style=\"color:red; margin-top: 20px\">\r\n        {{'high_commission'|translate}}<br>\r\n        {{'on_balance'|translate}}: {{onBalance}}\r\n      </div>\r\n      <div *ngIf=\"product.pId!=0\" style=\"display: inline-block; width: 100%;\">\r\n        <button *ngIf=\"product.pId!=0\" type=button class=remark (click)=\"showComment()\">{{'comment'|translate}}</button>\r\n\r\n        <input (click)=\"setActiveInput(4)\" (focus)=\"setActiveInput(4)\" [formControl]=\"comment\" [readonly]=\"mobileView\"\r\n               class=\"remark-text form-control\"\r\n               id=remark-text>\r\n      </div>\r\n    </div>\r\n\r\n\r\n    <div *ngIf=\"product.pId!=0\" style=\"margin-top: 5px; height: 50px;\">\r\n      <button\r\n        [disabled]=\"F.form.invalid||(product.pType==2&&amount=='0'&&coins=='00')||invalid.min||invalid.max||invalid.commission\"\r\n        [ngClass]=\"{'disabled':(product.pType==2&&(F.form.invalid||(coins=='00'&&amount=='0')))||invalid.min||invalid.max||invalid.commission}\"\r\n        type=\"submit\"\r\n        id=\"operation-next\"\r\n        class=\"waves-effect waves-light btn next onkeyboard \"\r\n        (click)=\"pressup()\"\r\n        (keydown.enter)=\"pressup()\">\r\n        <span id=\"execute\" class=next-onkeyboard-inner>{{'execute'|translate}}</span>\r\n        {{'next'|translate}}\r\n        <span class=next-onkeyboard-overfl></span>\r\n      </button>\r\n    </div>\r\n    <!--<div id=\"wrong-data\" style=\"color: red;\" class=\"hide\">Change summ! Commission is bigger than amount</div>-->\r\n    <!--TODO!-->\r\n\r\n\r\n  </div>\r\n</form>\r\n<!--<app-keyboard (onBtnClick)=\"keyboardPress($event)\"></app-keyboard>-->\r\n\r\n<div [ngSwitch]=\"currKeyboard\" id=\"keyboard\" style=\"padding-top: 0px\">\r\n  <div *ngSwitchCase=\"1\" class=\"keyboard-wrap numbers clearfix\">\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton(1)\">1</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton(2)\">2</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton(3)\">3</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton(4)\">4</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton(5)\">5</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton(6)\">6</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton(7)\">7</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton(8)\">8</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton(9)\">9</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button id=\"but0\" type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton(0)\">0</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('.')\">.</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner letters\" (click)=\"changeKeyboard(2)\">абв\r\n      </button>\r\n    </div>\r\n    <div class=\"help-modal help-modal-small modal-keyboard\">\r\n      <div class=arrow-dialog>{{'keyboard_help'|translate}}</div>\r\n    </div>\r\n  </div>\r\n  <div *ngSwitchCase=\"2\" class=\"keyboard-wrap letters ru clearfix\">\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('й')\">й</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('ц')\">ц</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('у')\">у</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('к')\">к</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('е')\">е</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('н')\">н</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('г')\">г</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('ш')\">ш</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('щ')\">щ</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('з')\">з</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('х')\">х</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('ф')\">ф</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('ы')\">ы</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('в')\">в</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('а')\">а</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('п')\">п</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('р')\">р</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('о')\">о</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('л')\">л</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('д')\">д</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('ж')\">ж</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('э')\">э</button>\r\n    </div>\r\n    <div class=\"key-wrap upper\">\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"changeToUpper()\">\r\n        <svg class=svg-keyboard-icon>\r\n          <use href=#uppercase></use>\r\n        </svg>\r\n      </button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('я')\">я</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('ч')\">ч</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('с')\">с</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('м')\">м</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('и')\">и</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('т')\">т</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('ь')\">ь</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('б')\">б</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('ю')\">ю</button>\r\n    </div>\r\n    <div class=\"key-wrap bkspace\">\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"removeSymbol()\">\r\n        <svg class=svg-keyboard-icon>\r\n          <use href=#backspace></use>\r\n        </svg>\r\n      </button>\r\n    </div>\r\n    <div class=\"key-wrap switch-numbers\">\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"changeKeyboard(1)\">123</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('@')\">@</button>\r\n    </div>\r\n    <div class=\"key-wrap switch-en\">\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"changeKeyboard(3)\">en</button>\r\n    </div>\r\n    <div class=\"key-wrap space\">\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('space')\">Русский</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('.')\">.</button>\r\n    </div>\r\n    <div class=\"key-wrap switch-symbols\">\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"changeKeyboard(4)\">>.!</button>\r\n    </div>\r\n  </div>\r\n  <div *ngSwitchCase=\"3\" class=\"keyboard-wrap letters en clearfix\">\r\n    <div class=clearfix>\r\n      <div class=key-wrap>\r\n        <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('q')\">q</button>\r\n      </div>\r\n      <div class=key-wrap>\r\n        <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('w')\">w</button>\r\n      </div>\r\n      <div class=key-wrap>\r\n        <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('e')\">e</button>\r\n      </div>\r\n      <div class=key-wrap>\r\n        <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('r')\">r</button>\r\n      </div>\r\n      <div class=key-wrap>\r\n        <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('t')\">t</button>\r\n      </div>\r\n      <div class=key-wrap>\r\n        <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('y')\">y</button>\r\n      </div>\r\n      <div class=key-wrap>\r\n        <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('u')\">u</button>\r\n      </div>\r\n      <div class=key-wrap>\r\n        <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('i')\">i</button>\r\n      </div>\r\n      <div class=key-wrap>\r\n        <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('o')\">o</button>\r\n      </div>\r\n      <div class=key-wrap>\r\n        <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('p')\">p</button>\r\n      </div>\r\n    </div>\r\n    <div class=clearfix>\r\n      <div class=\"key-wrap leftspace-mibble\">\r\n        <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('a')\">a</button>\r\n      </div>\r\n      <div class=key-wrap>\r\n        <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('s')\">s</button>\r\n      </div>\r\n      <div class=key-wrap>\r\n        <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('d')\">d</button>\r\n      </div>\r\n      <div class=key-wrap>\r\n        <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('f')\">f</button>\r\n      </div>\r\n      <div class=key-wrap>\r\n        <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('g')\">g</button>\r\n      </div>\r\n      <div class=key-wrap>\r\n        <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('h')\">h</button>\r\n      </div>\r\n      <div class=key-wrap>\r\n        <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('j')\">j</button>\r\n      </div>\r\n      <div class=key-wrap>\r\n        <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('k')\">k</button>\r\n      </div>\r\n      <div class=key-wrap>\r\n        <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('l')\">l</button>\r\n      </div>\r\n    </div>\r\n    <div class=clearfix>\r\n      <div class=\"key-wrap upper\">\r\n        <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"changeToUpper()\">\r\n          <svg class=svg-keyboard-icon>\r\n            <use href=#uppercase></use>\r\n          </svg>\r\n        </button>\r\n      </div>\r\n      <div class=key-wrap>\r\n        <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('z')\">z</button>\r\n      </div>\r\n      <div class=key-wrap>\r\n        <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('x')\">x</button>\r\n      </div>\r\n      <div class=key-wrap>\r\n        <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('c')\">c</button>\r\n      </div>\r\n      <div class=key-wrap>\r\n        <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('v')\">v</button>\r\n      </div>\r\n      <div class=key-wrap>\r\n        <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('b')\">b</button>\r\n      </div>\r\n      <div class=key-wrap>\r\n        <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('n')\">n</button>\r\n      </div>\r\n      <div class=key-wrap>\r\n        <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('m')\">m</button>\r\n      </div>\r\n      <div class=\"key-wrap bkspace\">\r\n        <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"removeSymbol()\">\r\n          <svg class=svg-keyboard-icon>\r\n            <use href=#backspace></use>\r\n          </svg>\r\n        </button>\r\n      </div>\r\n    </div>\r\n    <div class=\"bottom-letters clearfix\">\r\n      <div class=\"key-wrap switch-numbers\">\r\n        <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"changeKeyboard(1)\">123</button>\r\n      </div>\r\n      <div class=key-wrap>\r\n        <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('@')\">@</button>\r\n      </div>\r\n      <div class=\"key-wrap switch-ru\">\r\n        <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"changeKeyboard(2)\">ru</button>\r\n      </div>\r\n      <div class=\"key-wrap space\">\r\n        <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('space')\">English\r\n        </button>\r\n      </div>\r\n      <div class=key-wrap>\r\n        <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('.')\">.</button>\r\n      </div>\r\n      <div class=\"key-wrap switch-symbols\">\r\n        <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"changeKeyboard(4)\">>.!</button>\r\n      </div>\r\n    </div>\r\n  </div>\r\n  <div *ngSwitchCase=\"4\" class=\"keyboard-wrap symbols clearfix\">\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('!')\">!</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('@')\">@</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('#')\">#</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('$')\">$</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('%')\">%</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('^')\">^</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('&')\">&</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('*')\">*</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('(')\">(</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton(')')\">)</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('-')\">-</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('+')\">+</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('№')\">№</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton(';')\">;</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('?')\">?</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('_')\">_</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('=')\">=</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('{')\">{{ \"{\" }}</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('}')\">}</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('[')\">[</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton(']')\">]</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('\\\\')\">\\</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('&lt;')\">&lt;</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('&gt;')\">&gt;</button>\r\n    </div>\r\n    <div class=\"key-wrap letters\">\r\n      <button type=button class=\"waves-effect waves-light btn key-inner letters\" (click)=\"changeKeyboard(2)\">абв\r\n      </button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton(',')\">,</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('.')\">.</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('/')\">/</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('&quot;')\">\"</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('\\'')\">'</button>\r\n    </div>\r\n    <div class=key-wrap>\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"pressButton('|')\">|</button>\r\n    </div>\r\n    <div class=\"key-wrap bkspace\">\r\n      <button type=button class=\"waves-effect waves-light btn key-inner\" (click)=\"removeSymbol()\">\r\n        <svg class=svg-keyboard-icon>\r\n          <use href=#backspace></use>\r\n        </svg>\r\n      </button>\r\n    </div>\r\n  </div>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -4321,7 +4321,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var InputFormComponent = /** @class */ (function () {
+var InputFormComponent = (function () {
     // ======== HELP METHODS ================================================================================================
     function InputFormComponent(opService, catService, prodService) {
         var _this = this;
@@ -4549,8 +4549,8 @@ var InputFormComponent = /** @class */ (function () {
             inputType: type,
             fieldIndex: fOrderId || 0
         };
-        if (type == 3) {
-            if (fOrderId == 1) {
+        if (type === 3) {
+            if (fOrderId === 1) {
                 field = document.getElementById('coins');
                 field.value = field.value.replace(/[.]/g, '');
                 field.focus();
@@ -4639,7 +4639,7 @@ var InputFormComponent = /** @class */ (function () {
         console.log(this.fields);
     };
     InputFormComponent.prototype.formMasked = function (fields) {
-        console.log("Form masked");
+        console.log('Form masked');
         this.masked = [];
         for (var i = 0; i < fields.length; i++) {
             this.masked.push({
@@ -4899,6 +4899,7 @@ var InputFormComponent = /** @class */ (function () {
                 this.checkOperation();
             }
             else {
+                alert('Direct goToVerification()');
                 console.log('WIDTH = ' + width);
                 this.goToVerification(true);
             }
@@ -5234,7 +5235,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
-var KeyboardComponent = /** @class */ (function () {
+var KeyboardComponent = (function () {
     function KeyboardComponent() {
         this.currKeyboard = 1;
         this.upperCase = false;
@@ -5328,7 +5329,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var LoginComponent = /** @class */ (function () {
+var LoginComponent = (function () {
     function LoginComponent(route, router, configuration, authenticationService, user) {
         this.route = route;
         this.router = router;
@@ -5487,7 +5488,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var NavMenuComponent = /** @class */ (function () {
+var NavMenuComponent = (function () {
     function NavMenuComponent(dateAdapter, global) {
         var _this = this;
         this.dateAdapter = dateAdapter;
@@ -5612,7 +5613,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var NewsComponent = /** @class */ (function () {
+var NewsComponent = (function () {
     function NewsComponent(service, alert) {
         this.service = service;
         this.alert = alert;
@@ -5718,7 +5719,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var OtpAuthComponent = /** @class */ (function () {
+var OtpAuthComponent = (function () {
     function OtpAuthComponent(route, router, configuration, authenticationService, user) {
         this.route = route;
         this.router = router;
@@ -5852,7 +5853,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var ProductListComponent = /** @class */ (function () {
+var ProductListComponent = (function () {
     function ProductListComponent(service, catService, opService, alert) {
         var _this = this;
         this.service = service;
@@ -6007,7 +6008,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var AuthHistoryComponent = /** @class */ (function () {
+var AuthHistoryComponent = (function () {
     function AuthHistoryComponent(report, alert) {
         this.report = report;
         this.alert = alert;
@@ -6100,7 +6101,7 @@ var __param = (this && this.__param) || function (paramIndex, decorator) {
 
 
 
-var CollectionComponent = /** @class */ (function () {
+var CollectionComponent = (function () {
     function CollectionComponent(global, report, alert, dialog) {
         this.global = global;
         this.report = report;
@@ -6299,7 +6300,7 @@ var CollectionComponent = /** @class */ (function () {
     return CollectionComponent;
 }());
 
-var MyCollection = /** @class */ (function () {
+var MyCollection = (function () {
     function MyCollection(dialogRef, report, data) {
         this.dialogRef = dialogRef;
         this.report = report;
@@ -6412,7 +6413,7 @@ var __param = (this && this.__param) || function (paramIndex, decorator) {
 
 
 
-var OperationReportComponent = /** @class */ (function () {
+var OperationReportComponent = (function () {
     function OperationReportComponent(report, alert, dialog) {
         this.report = report;
         this.alert = alert;
@@ -6515,7 +6516,7 @@ var OperationReportComponent = /** @class */ (function () {
     return OperationReportComponent;
 }());
 
-var MyDialog = /** @class */ (function () {
+var MyDialog = (function () {
     function MyDialog(opService, dialogRef, prodServ, data) {
         this.opService = opService;
         this.dialogRef = dialogRef;
@@ -6681,7 +6682,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var ReportsComponent = /** @class */ (function () {
+var ReportsComponent = (function () {
     function ReportsComponent(global, report) {
         this.global = global;
         this.report = report;
@@ -6938,7 +6939,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
-var StatusComponent = /** @class */ (function () {
+var StatusComponent = (function () {
     function StatusComponent(route) {
         var _this = this;
         this.route = route;
@@ -7009,7 +7010,7 @@ var __param = (this && this.__param) || function (paramIndex, decorator) {
 
 
 
-var ArticleApi = /** @class */ (function () {
+var ArticleApi = (function () {
     function ArticleApi(http, basePath, configuration) {
         this.http = http;
         this.defaultHeaders = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Headers */]();
@@ -7266,7 +7267,7 @@ var __param = (this && this.__param) || function (paramIndex, decorator) {
 
 
 
-var AuthApi = /** @class */ (function () {
+var AuthApi = (function () {
     function AuthApi(http, basePath, configuration) {
         this.http = http;
         this.defaultHeaders = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Headers */]();
@@ -7581,7 +7582,7 @@ var __param = (this && this.__param) || function (paramIndex, decorator) {
 
 
 
-var OperationApi = /** @class */ (function () {
+var OperationApi = (function () {
     function OperationApi(http, basePath, configuration) {
         this.http = http;
         this.defaultHeaders = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Headers */]();
@@ -8072,7 +8073,7 @@ var __param = (this && this.__param) || function (paramIndex, decorator) {
 
 
 
-var ReportApi = /** @class */ (function () {
+var ReportApi = (function () {
     function ReportApi(http, basePath, configuration) {
         this.http = http;
         this.defaultHeaders = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Headers */]();
@@ -8683,7 +8684,7 @@ var __param = (this && this.__param) || function (paramIndex, decorator) {
 
 
 
-var UserApi = /** @class */ (function () {
+var UserApi = (function () {
     function UserApi(http, basePath, configuration) {
         this.http = http;
         this.defaultHeaders = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Headers */]();
@@ -9163,7 +9164,7 @@ var UserApi = /** @class */ (function () {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Configuration; });
-var Configuration = /** @class */ (function () {
+var Configuration = (function () {
     function Configuration() {
     }
     return Configuration;
@@ -9197,7 +9198,7 @@ var COLLECTION_FORMATS = {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Lang; });
-var Lang = /** @class */ (function () {
+var Lang = (function () {
     function Lang() {
     }
     Lang.getLangValue = function (names) {
@@ -9495,7 +9496,7 @@ var __param = (this && this.__param) || function (paramIndex, decorator) {
 };
 
  // our translate service
-var TranslatePipe = /** @class */ (function () {
+var TranslatePipe = (function () {
     function TranslatePipe(_translations) {
         this._translations = _translations;
         this.currentLang = localStorage.lang;
